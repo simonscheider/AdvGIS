@@ -122,7 +122,7 @@ class dataf():
                 scripttemplate = os.path.splitext(script)[0]+'_origin'+os.path.splitext(script)[1]
                 f1=open(scripttemplate,'r')
             elif (self.numalt== 4):
-                scripttemplate = os.path.splitext(script)[0]+'_origin'+os.path.splitext(script)[1]
+                scripttemplate = os.path.splitext(script)[0]+'_origin4'+os.path.splitext(script)[1]
                 f1=open(scripttemplate,'r')
         else:
             scripttemplate = os.path.splitext(script)[0]+'_origin'+os.path.splitext(script)[1]
@@ -166,14 +166,17 @@ class dataf():
                 f2.write(line)
 
             if( script =="MOT_C2b.flg" ):
-                line = line.replace("H:\ADVGIS\Group18",self.path)
-                line = line.replace('LABEL',self.exitnamefield)
-                line = line.replace('ACCESS',self.access)
-                line = line.replace('TIME_FORTH',self.TTCurrentForth)
-                line = line.replace('TIME_BACK',self.TTCurrentBack)
-                line = line.replace('ASSEN01',self.exit1)
-                line = line.replace('MARUM01',self.exit2)
-                if (self.numalt>=3):
+                if (self.numalt==3):
+                    line = line.replace('POINT18','POINT'+str(self.grp))
+                    line = line.replace('ROADS18','ROADS'+str(self.grp))
+                    line = line.replace("Group 18", "Group "+str(self.grp))
+                    line = line.replace("H:\ADVGIS\Group18",self.path)
+                    line = line.replace('LABEL',self.exitnamefield)
+                    line = line.replace('ACCESS',self.access)
+                    line = line.replace('TIME_FORTH',self.TTCurrentForth)
+                    line = line.replace('TIME_BACK',self.TTCurrentBack)
+                    line = line.replace('ASSEN01',self.exit1)
+                    line = line.replace('MARUM01',self.exit2)
                     if (line.find('ECON_FORTH')!=-1):
                         line = line.replace('ECON_FORTH',self.TTAltForth[0])
                     if (line.find('ECON_BACK')!=-1):
@@ -186,8 +189,34 @@ class dataf():
                         line = line.replace('TOUR_FORTH',self.TTAltForth[2])
                     if (line.find('TOUR_BACK')!=-1):
                         line= line.replace('TOUR_BACK',self.TTAltBack[2])
+
                 if (self.numalt==4):
-                    pass
+                    line = line.replace("U:\ADVGIS\Route22",self.path)
+                    line = line.replace('POINT22','POINT'+str(self.grp))
+                    line = line.replace('ROADS22','ROADS'+str(self.grp))
+                    line = line.replace("Group 22", "Group "+str(self.grp))
+                    line = line.replace('LABEL',self.exitnamefield)
+                    line = line.replace('ACCESS',self.access)
+                    line = line.replace('TIME_FORTH',self.TTCurrentForth)
+                    line = line.replace('TIME_BACK',self.TTCurrentBack)
+                    line = line.replace('Dokkum02',self.exit1)
+                    line = line.replace('Nyega',self.exit2)
+                    if (line.find('NAT_FORTH')!=-1):
+                        line = line.replace('NAT_FORTH',self.TTAltForth[0])
+                    if (line.find('NAT_BACK')!=-1):
+                        line= line.replace('NAT_BACK',self.TTAltBack[0])
+                    if (line.find('MONU_FORTH')!=-1):
+                        line = line.replace('MONU_FORTH',self.TTAltForth[1])
+                    if (line.find('MONU_BACK')!=-1):
+                        line= line.replace('MONU_BACK',self.TTAltBack[1])
+                    if (line.find('TOUR_FORTH')!=-1):
+                        line = line.replace('TOUR_FORTH',self.TTAltForth[2])
+                    if (line.find('TOUR_BACK')!=-1):
+                        line= line.replace('TOUR_BACK',self.TTAltBack[2])
+                    if (line.find('TOUR2_FORTH')!=-1):
+                        line = line.replace('TOUR2_FORTH',self.TTAltForth[3])
+                    if (line.find('TOUR2_BACK')!=-1):
+                        line= line.replace('TOUR2_BACK',self.TTAltBack[3])
                 f2.write(line)
 
             if ( script =="MOT_C1.flg" ):
@@ -234,12 +263,15 @@ def xls_to_csv(workbook= 'data.xls'):
     csvfile.close()
 
 def main():
-    xls_to_csv(workbook="P:\AdvGIS\Group10\MOT10_mod.xls")
-    d = dataf(spath='P:\AdvGIS\Group10', file='MOT10_mod.csv', exit1 = "StartDOKKUM", exit2= "EndMARUM")
+    #xls_to_csv(workbook="P:\AdvGIS\Group10\MOT10.xls")
+    #d = dataf(spath='P:\AdvGIS\Group10', file='MOT10.csv', exit1 = "STARTDOKKUM", exit2= "ENDMARUM")
+    xls_to_csv(workbook="P:\AdvGIS\Group19\MOTxx.xls")
+    d = dataf(spath='P:\AdvGIS\Group19', file='MOTxx.csv', exit1 = "DOKKUMEXIT", exit2= "GRONINGENEXIT")
+
     d.read()
-    #d.replaceall(script = "MOT_C1.flg")
+    d.replaceall(script = "MOT_C1.flg")
     d.replaceall(script = "MOT_C2a.flg")
-##    d.replaceall(script = "MOT_C2b.flg")
+    d.replaceall(script = "MOT_C2b.flg")
     #print d
 
 if __name__ == '__main__':
