@@ -1,0 +1,153 @@
+# ----------------FLOWMAP FULL LOG FILE HEADER----------------
+# File: C:\Users\simon\Documents\GitHub\AdvGIS\FMlog001.flg
+# Creation date: 05-08-2013
+# Creation time: 15:45:58
+# ------------------------------------------------------------
+# ALIAS C:\Users\simon\Documents\GitHub\AdvGIS\FMlog001.flg
+# BEGIN PROJECT SECTION
+     # PROJECT RESET:
+        YES
+     # PROJECT FILE:
+        C:\Users\simon\Documents\GitHub\AdvGIS\FMprj001.fpf
+     # PROJECT FILE VERSION:
+        7.4
+     # DATABASE MANAGEMENT SYTEM:
+        dBASE III;
+     # DATABASE FILE EXTENSION:
+        dbf
+     # PROJECT WORK SPACE:
+        C:\Users\simon\Documents\GitHub\AdvGIS\
+     # IMPORT FILE:
+        [None]
+     # MAP FILE:
+        [None]
+     # DISTANCE TABLE:
+        [None]
+     # ORIGIN FILE:
+        [None]
+     # DESTINATION FILE:
+        [None]
+     # FLOW FILE:
+        [None]
+     # FLOW TABLE:
+        [None]
+     # SYMBOLOGY FILE:
+        [Default]
+     # BACKGROUND BITMAP FILE:
+        [None]
+     # EXPORT FILE:
+        [None]
+     # MAP EXTENT REFERENCE:
+        [No view set yet]
+        
+     # X-COORDINATE LOWER LEFT CORNER:
+        0
+     # Y-COORDINATE LOWER LEFT CORNER:
+        0
+     # X-COORDINATE UPPER RIGHT CORNER:
+        0
+     # Y-COORDINATE UPPER RIGHT CORNER:
+        0
+     # MAP MEASUREMENT UNIT:
+        
+# END PROJECT SECTION
+# BEGIN FILE CONVERSION SECTION
+     # CONVERT OPTION:
+        arcview (shape) -> bna
+     # INPUT FOLDER:
+        C:\Users\simon\Documents\GitHub\AdvGIS\
+     # INPUT FILE:
+        Points18.shp
+     # OUTPUT FOLDER:
+        C:\Users\simon\Documents\GitHub\AdvGIS\
+     # OUTPUT FILE:
+        Point18.BNA
+     # OUTPUT FILE MODE:
+        Overwrite
+     # NAME LABEL ITEM:
+        ExitName           
+     # DATA TYPE LABEL ITEM:
+        Text     
+# END FILE CONVERSION SECTION
+# BEGIN FILE CONVERSION SECTION
+     # CONVERT OPTION:
+        arcview (shape) -> bna
+     # INPUT FOLDER:
+        C:\Users\simon\Documents\GitHub\AdvGIS\
+     # INPUT FILE:
+        ROADS18.shp
+     # OUTPUT FOLDER:
+        C:\Users\simon\Documents\GitHub\AdvGIS\
+     # OUTPUT FILE:
+        Roads18.BNA
+     # OUTPUT FILE MODE:
+        Overwrite
+     # NAME LABEL ITEM:
+        BN2000_         
+     # DATA TYPE LABEL ITEM:
+        Double   
+# END FILE CONVERSION SECTION
+# BEGIN FILE CONVERSION SECTION
+     # CONVERT OPTION:
+        bna -> flowmap
+     # INPUT FOLDER:
+        C:\Users\simon\Documents\GitHub\AdvGIS\
+     # INPUT FILE:
+        Point18.BNA
+     # OUTPUT FOLDER:
+        C:\Users\simon\Documents\GitHub\AdvGIS\
+     # OUTPUT FILE:
+        Point18.006
+     # OUTPUT FILE MODE:
+        Overwrite
+     # OBJECT TYPE:
+        point
+# END FILE CONVERSION SECTION
+# BEGIN FILE CONVERSION SECTION
+     # CONVERT OPTION:
+        bna -> flowmap
+     # INPUT FOLDER:
+        C:\Users\simon\Documents\GitHub\AdvGIS\
+     # INPUT FILE:
+        Roads18.BNA
+     # OUTPUT FOLDER:
+        C:\Users\simon\Documents\GitHub\AdvGIS\
+     # OUTPUT FILE:
+        Roads18.006
+     # OUTPUT FILE MODE:
+        Overwrite
+     # OBJECT TYPE:
+        line
+     # BEGIN REPLY
+        Yes
+     # END REPLY
+# END FILE CONVERSION SECTION
+# BEGIN COPY FIELDS SECTION
+     # TARGET FILE:
+        C:\Users\simon\Documents\GitHub\AdvGIS\ROADS183.DBF
+     # KEY FIELD IN TARGET FILE:
+        LABEL
+     # SOURCE FILE:
+        C:\Users\simon\Documents\GitHub\AdvGIS\ROADS18.dbf
+     # KEY FIELD IN SOURCE FILE:
+        BN2000_
+     # NUMBER OF SELECTED FIELDS:
+        13 
+     # LIST OF SELECTED FIELDS:
+		SPEED
+		TIME_FORTH
+		TIME_BACK
+		ACCESS
+		Route
+		ECON_FORTH
+		ECON_BACK
+		NOIS_FORTH
+		NOIS_BACK
+		TOUR_FORTH
+		TOUR_BACK
+		NAT_FORTH
+		NAT_BACK
+# END COPY FIELDS SECTION
+# MENU BUTTON: options
+   # MENU BUTTON: mode of operation
+      # MENU BUTTON: interactive

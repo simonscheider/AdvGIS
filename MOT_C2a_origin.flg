@@ -1,0 +1,538 @@
+# ----------------FLOWMAP FULL LOG FILE HEADER----------------
+# File: H:\ADVGIS\Group18\FMlog001.flg
+# Creation date: 05-08-2013
+# Creation time: 15:45:58
+# ------------------------------------------------------------
+# ALIAS H:\ADVGIS\Group18\FMlog001.flg
+# BEGIN PROJECT SECTION
+     # PROJECT RESET:
+        YES
+     # VIEW RESET:
+        YES
+     # PROJECT FILE:
+        H:\ADVGIS\Group18\FMprj001.fpf
+     # PROJECT FILE VERSION:
+        7.4
+     # DATABASE MANAGEMENT SYTEM:
+        dBASE III;
+     # DATABASE FILE EXTENSION:
+        dbf
+     # PROJECT WORK SPACE:
+        H:\ADVGIS\Group18\
+     # IMPORT FILE:
+        [None]
+     # MAP FILE:
+        H:\ADVGIS\Group18\ROADS18.006
+     # DISTANCE TABLE:
+        [None]
+     # ORIGIN FILE:
+        H:\ADVGIS\Group18\POINT181.DBF
+     # DESTINATION FILE:
+        H:\ADVGIS\Group18\POINT181.DBF
+     # FLOW FILE:
+        [None]
+     # FLOW TABLE:
+        [None]
+     # SYMBOLOGY FILE:
+        [Default]
+     # BACKGROUND BITMAP FILE:
+        [None]
+     # EXPORT FILE:
+        [None]
+     # MAP EXTENT REFERENCE:
+        H:\ADVGIS\Group18\POINT181.DBF
+        H:\ADVGIS\Group18\POINT181.DBF
+        
+        
+     # MAP MEASUREMENT UNIT:
+        Meters
+# END PROJECT SECTION
+# BEGIN VIEW SECTION
+     # VIEW OPTION:
+        zoom out (+100%)
+     # REFERENCE:
+        [Manual Zoom Out]
+        
+# END VIEW SECTION
+# BEGIN TRANSPORT NETWORK ANALYSIS SECTION
+     # CENTRES ARE IN:
+        DESTINATIONS FILE
+     # NAME ATTRIBUTE FILE:
+        H:\ADVGIS\Group18\ROADS183.DBF                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+     # FIELD NAME IMPEDANCE (OUT) ATTRIBUTE:
+        LENGTH
+     # FIELD NAME IMPEDANCE (HOME) ATTRIBUTE:
+        LENGTH
+     # CONNECT METHOD:
+        NODES
+     # FIELD NAME ACCESS ATTRIBUTE:
+        ACCESS    
+     # MULTIPLICATION FACTOR:
+         10 
+     # FIELD NAME DISTANCE TO CENTRE:
+        NAdistan1
+     # FIELD DECIMALS DISTANCE TO CENTRE:
+        2
+     # FIELD NAME NEAREST CENTRE:
+        NAcentre1
+# END TRANSPORT NETWORK ANALYSIS SECTION
+# BEGIN PALETTE ENTRY SECTION
+     # PALETTE TYPE:
+        Outline
+     # PALETTE NUMBER (LEFT-RIGHT/TOP-DOWN = 0-31):
+        0 
+     # BACKGROUND COLOR RED INTENSITY (0-255):
+         238 
+     # BACKGROUND COLOR GREEN INTENSITY (0-255):
+         238 
+     # BACKGROUND COLOR BLUE INTENSITY (0-255):
+         238 
+     # SYMBOL COLOR RED INTENSITY (0-255):
+         205 
+     # SYMBOL COLOR GREEN INTENSITY (0-255):
+         0 
+     # SYMBOL COLOR BLUE INTENSITY (0-255):
+         205 
+     # SYMBOL STYLE:
+        Solid
+     # SYMBOL SIZE (1-25):
+        2 
+# END PALETTE ENTRY SECTION
+# BEGIN PALETTE ENTRY SECTION
+     # PALETTE TYPE:
+        Outline
+     # PALETTE NUMBER (LEFT-RIGHT/TOP-DOWN = 0-31):
+        1 
+     # BACKGROUND COLOR RED INTENSITY (0-255):
+         238 
+     # BACKGROUND COLOR GREEN INTENSITY (0-255):
+         238 
+     # BACKGROUND COLOR BLUE INTENSITY (0-255):
+         238 
+     # SYMBOL COLOR RED INTENSITY (0-255):
+         255 
+     # SYMBOL COLOR GREEN INTENSITY (0-255):
+         0 
+     # SYMBOL COLOR BLUE INTENSITY (0-255):
+         127 
+     # SYMBOL STYLE:
+        Solid
+     # SYMBOL SIZE (1-25):
+        2 
+# END PALETTE ENTRY SECTION
+# BEGIN PALETTE ENTRY SECTION
+     # PALETTE TYPE:
+        Outline
+     # PALETTE NUMBER (LEFT-RIGHT/TOP-DOWN = 0-31):
+        2 
+     # BACKGROUND COLOR RED INTENSITY (0-255):
+         238 
+     # BACKGROUND COLOR GREEN INTENSITY (0-255):
+         238 
+     # BACKGROUND COLOR BLUE INTENSITY (0-255):
+         238 
+     # SYMBOL COLOR RED INTENSITY (0-255):
+         255 
+     # SYMBOL COLOR GREEN INTENSITY (0-255):
+         204 
+     # SYMBOL COLOR BLUE INTENSITY (0-255):
+         0 
+     # SYMBOL STYLE:
+        Solid
+     # SYMBOL SIZE (1-25):
+        2 
+# END PALETTE ENTRY SECTION
+# BEGIN PALETTE ENTRY SECTION
+     # PALETTE TYPE:
+        Outline
+     # PALETTE NUMBER (LEFT-RIGHT/TOP-DOWN = 0-31):
+        3 
+     # BACKGROUND COLOR RED INTENSITY (0-255):
+         238 
+     # BACKGROUND COLOR GREEN INTENSITY (0-255):
+         238 
+     # BACKGROUND COLOR BLUE INTENSITY (0-255):
+         238 
+     # SYMBOL COLOR RED INTENSITY (0-255):
+         0 
+     # SYMBOL COLOR GREEN INTENSITY (0-255):
+         127 
+     # SYMBOL COLOR BLUE INTENSITY (0-255):
+         255 
+     # SYMBOL STYLE:
+        Solid
+     # SYMBOL SIZE (1-25):
+        2 
+# END PALETTE ENTRY SECTION
+# BEGIN PALETTE ENTRY SECTION
+     # PALETTE TYPE:
+        Outline
+     # PALETTE NUMBER (LEFT-RIGHT/TOP-DOWN = 0-31):
+        4 
+     # BACKGROUND COLOR RED INTENSITY (0-255):
+         238 
+     # BACKGROUND COLOR GREEN INTENSITY (0-255):
+         238 
+     # BACKGROUND COLOR BLUE INTENSITY (0-255):
+         238 
+     # SYMBOL COLOR RED INTENSITY (0-255):
+         31 
+     # SYMBOL COLOR GREEN INTENSITY (0-255):
+         127 
+     # SYMBOL COLOR BLUE INTENSITY (0-255):
+         29 
+     # SYMBOL STYLE:
+        Solid
+     # SYMBOL SIZE (1-25):
+        2 
+# END PALETTE ENTRY SECTION
+# BEGIN DRAW SECTION
+     # DRAW OPTION:
+        uniform drawing
+     # PALETTE NUMBER (LEFT-RIGHT/TOP-DOWN = 0-31):
+        8 
+# END DRAW SECTION
+# BEGIN DRAW SECTION
+     # DRAW OPTION:
+        discrete drawing
+     # NAME DISCRETE SHADE FIELD:
+        Route
+# END DRAW SECTION
+# BEGIN SUBSET SECTION
+     # SUBSET OPTION:
+        select objects map file
+     # SUBSET METHOD:
+        MINIMUM
+     # SUBSET FIELD:
+        NADISTAN1
+     # SELECTION TYPE:
+        SIMPLE
+# END SUBSET SECTION
+# BEGIN DRAW SECTION
+     # DRAW OPTION:
+        uniform drawing
+     # PALETTE NUMBER (LEFT-RIGHT/TOP-DOWN = 0-31):
+        13 
+# END DRAW SECTION
+# BEGIN DRAW SECTION
+     # DRAW OPTION:
+        show topology
+     # PALETTE NUMBER (LEFT-RIGHT/TOP-DOWN = 0-31):
+        26 
+     # TOPOLOGY OPTION:
+        dangling nodes
+# END DRAW SECTION
+# BEGIN PROJECT SECTION
+     # PROJECT RESET:
+        NO
+     # VIEW RESET:
+        NO
+     # PROJECT FILE:
+        H:\ADVGIS\Group18\FMprj001.fpf
+     # PROJECT FILE VERSION:
+        7.4
+     # DATABASE MANAGEMENT SYTEM:
+        dBASE III;
+     # DATABASE FILE EXTENSION:
+        dbf
+     # PROJECT WORK SPACE:
+        H:\ADVGIS\Group18\
+     # IMPORT FILE:
+        [None]
+     # MAP FILE:
+        C:\Users\simon\Documents\GitHub\AdvGIS\MY_ROADS.006
+     # DISTANCE TABLE:
+        [None]
+     # ORIGIN FILE:
+        H:\ADVGIS\Group18\POINT181.DBF
+     # DESTINATION FILE:
+        H:\ADVGIS\Group18\POINT181.DBF
+     # FLOW FILE:
+        [None]
+     # FLOW TABLE:
+        [None]
+     # SYMBOLOGY FILE:
+        [Default]
+     # BACKGROUND BITMAP FILE:
+        [None]
+     # EXPORT FILE:
+        [None]
+     # MAP EXTENT REFERENCE:
+        H:\ADVGIS\Group18\POINT181.DBF
+        H:\ADVGIS\Group18\POINT181.DBF
+        
+        
+     # MAP MEASUREMENT UNIT:
+        Meters
+# END PROJECT SECTION
+# BEGIN DRAW SECTION
+     # DRAW OPTION:
+        show topology
+     # PALETTE NUMBER (LEFT-RIGHT/TOP-DOWN = 0-31):
+        17 
+     # TOPOLOGY OPTION:
+        dangling nodes
+# END DRAW SECTION
+# BEGIN MAP TITLE ACTIVATION SECTION
+     # ACTIVATION:
+        TRUE
+# END MAP TITLE ACTIVATION SECTION
+# BEGIN CHANGE TEXT SECTION
+     # CHANGE TEXT OPTION:
+        Edit Map Title Text                                                                                                                                                                                                                                                 
+     # BEGIN NEW TEXT:
+        Group 18
+        
+        
+        Check different alternatives
+        
+        Correct: Yes / No
+        
+        
+        Check New Dead Ends
+        
+        Correct: Yes / No
+        
+        
+        Check Connectivity (Minimum => 0)
+        
+        Correct: Yes / No
+        
+        
+         
+        
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+     # END NEW TEXT:
+     # FONT BOLD:
+        TRUE
+     # FONT ITALIC:
+        FALSE
+     # FONT NAME:
+        MS Sans Serif
+     # FONT SIZE:
+        14
+     # FONT STRIKETHRU:
+        FALSE
+     # FONT UNDERLINE:
+        FALSE
+# END CHANGE TEXT SECTION
+# BEGIN DISPLAY SECTION
+     # DISPLAY FILE:
+        H:\ADVGIS\Group18\POINT181.DBF
+     # PALETTE NUMBER (LEFT-RIGHT/TOP-DOWN = 0-31):
+        11 
+# END DISPLAY SECTION
+# BREAK
+# BEGIN SAVE/PRINT JPEG SECTION
+          # WINDOW TITLE:
+             Flowmap - Professional Release #version#       
+          # SAVE OPTION:
+             save flowmap window
+          # SAVE MODE:
+             File
+          # SAVE IN FOLDER:
+             H:\ADVGIS\Group18\
+          # SAVE AS FILE:
+             G18_2a1.jpg
+     # END SAVE/PRINT JPEG SECTION
+# BEGIN PROJECT SECTION
+     # PROJECT RESET:
+        YES
+     # PROJECT FILE:
+        H:\ADVGIS\Group18\FMprj001.fpf
+     # PROJECT FILE VERSION:
+        7.4
+     # DATABASE MANAGEMENT SYTEM:
+        dBASE III;
+     # DATABASE FILE EXTENSION:
+        dbf
+     # PROJECT WORK SPACE:
+        H:\ADVGIS\Group18\
+     # IMPORT FILE:
+        [None]
+     # MAP FILE:
+        H:\ADVGIS\Group18\ROADS18.006
+     # DISTANCE TABLE:
+        [None]
+     # ORIGIN FILE:
+        H:\ADVGIS\Group18\POINT181.DBF
+     # DESTINATION FILE:
+        H:\ADVGIS\Group18\POINT181.DBF
+     # FLOW FILE:
+        [None]
+     # FLOW TABLE:
+        [None]
+     # SYMBOLOGY FILE:
+        [Default]
+     # BACKGROUND BITMAP FILE:
+        [None]
+     # EXPORT FILE:
+        [None]
+     # MAP EXTENT REFERENCE:
+        H:\ADVGIS\Group18\POINT181.DBF
+        H:\ADVGIS\Group18\POINT181.DBF
+        
+        
+     # MAP MEASUREMENT UNIT:
+        Meters
+# END PROJECT SECTION
+# BEGIN DRAW SECTION
+     # DRAW OPTION:
+        uniform drawing
+     # PALETTE NUMBER (LEFT-RIGHT/TOP-DOWN = 0-31):
+        8 
+# END DRAW SECTION
+# BEGIN DRAW SECTION
+     # DRAW OPTION:
+        draw origin file
+     # PALETTE NUMBER (LEFT-RIGHT/TOP-DOWN = 0-31):
+        31 
+# END DRAW SECTION
+# BEGIN DRAW SECTION
+     # DRAW OPTION:
+        draw origin file
+     # PALETTE NUMBER (LEFT-RIGHT/TOP-DOWN = 0-31):
+        30 
+# END DRAW SECTION
+# BEGIN DRAW SECTION
+     # DRAW OPTION:
+        gradient drawing
+     # NAME GRADIENT FIELD:
+        NADISTAN1
+     # GRADIENT LOWER BOUND:
+        0 
+     # GRADIENT UPPER BOUND:
+        5 
+     # PROPORTIONAL:
+        FALSE
+     # DRAWWIDTH (in pixels):
+        3 
+     # COLOR INTENSITY LOWER END RED:
+        100 
+     # COLOR INTENSITY LOWER END GREEN:
+        50 
+     # COLOR INTENSITY LOWER END BLUE:
+        0 
+     # COLOR INTENSITY UPPER END RED:
+        100 
+     # COLOR INTENSITY UPPER END GREEN:
+        50 
+     # COLOR INTENSITY UPPER END BLUE:
+        0 
+# END DRAW SECTION
+# BEGIN SUBSET SECTION
+     # SUBSET OPTION:
+        select objects map file
+     # SUBSET METHOD:
+        RANGE  
+     # SUBSET FIELD:
+        NADISTAN1
+     # SUBSET LOWER BOUND:
+       -0.5 
+     # SUBSET UPPER BOUND:
+        5 
+     # SELECTION TYPE:
+        SIMPLE
+# END SUBSET SECTION
+# BEGIN DRAW SECTION
+     # DRAW OPTION:
+        uniform drawing
+     # PALETTE NUMBER (LEFT-RIGHT/TOP-DOWN = 0-31):
+        13 
+# END DRAW SECTION
+# BEGIN SUBSET SECTION
+     # SUBSET OPTION:
+        select objects map file
+     # SUBSET METHOD:
+        RANGE  
+     # SUBSET FIELD:
+        TIME_FORTH
+     # SUBSET LOWER BOUND:
+        0 
+     # SUBSET UPPER BOUND:
+        MAXIMUM 
+     # SELECTION TYPE:
+        MULTIPLE
+     # COMBINATION METHOD:
+        AND
+# END SUBSET SECTION
+# BEGIN DISPLAY LABELS SECTION
+     # DISPLAY LABELS OPTION:
+        show labels from map file
+     # VARIABLE NAME:
+        TIME_FORTH
+     # SCREEN RESOLUTION UNIT:
+        175
+     # X-OFFSET:
+        1
+     # Y-OFFSET:
+        1
+     # RED INTENSITY (0-255):
+        128
+     # GREEN INTENSITY (0-255):
+        0
+     # BLUE INTENSITY (0-255):
+        128
+     # FONT BOLD:
+        TRUE
+     # FONT ITALIC:
+        FALSE
+     # FONT NAME:
+        Arial Narrow
+     # FONT SIZE:
+        8
+     # FONT STRIKETHRU:
+        FALSE
+     # FONT UNDERLINE:
+        FALSE
+# END DISPLAY LABELS SECTION
+# BEGIN CHANGE TEXT SECTION
+     # CHANGE TEXT OPTION:
+        Edit Map Title Text                                                                                                                                                                                                                                                 
+     # BEGIN NEW TEXT:
+        Group 18
+        
+        
+        Check 4 Roads per Split Point
+        
+        Correct: Yes / No
+        
+
+        Check 2 different Split Attributes per Split point
+        
+        Correct: Yes / No
+        
+               
+        
+         
+        
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+     # END NEW TEXT:
+     # FONT BOLD:
+        TRUE
+     # FONT ITALIC:
+        FALSE
+     # FONT NAME:
+        MS Sans Serif
+     # FONT SIZE:
+        14
+     # FONT STRIKETHRU:
+        FALSE
+     # FONT UNDERLINE:
+        FALSE
+# END CHANGE TEXT SECTION
+# BEGIN SAVE/PRINT JPEG SECTION
+          # WINDOW TITLE:
+             Flowmap - Professional Release #version#       
+          # SAVE OPTION:
+             save flowmap window
+          # SAVE MODE:
+             File
+          # SAVE IN FOLDER:
+             H:\ADVGIS\Group18\
+          # SAVE AS FILE:
+             G18_2a2.jpg
+     # END SAVE/PRINT JPEG SECTION
+# MENU BUTTON: options
+   # MENU BUTTON: mode of operation
+      # MENU BUTTON: interactive

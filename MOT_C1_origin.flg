@@ -1,0 +1,151 @@
+# ----------------FLOWMAP FULL LOG FILE HEADER----------------
+# File: D:\Temp\Nordland\FMlog001.flg
+# Creation date: 05-08-2013
+# Creation time: 15:45:58
+# ------------------------------------------------------------
+# ALIAS D:\Temp\Nordland\FMlog001.flg
+# BEGIN PROJECT SECTION
+     # PROJECT RESET:
+        YES
+     # PROJECT FILE:
+        D:\Temp\Nordland\FMprj001.fpf
+     # PROJECT FILE VERSION:
+        7.4
+     # DATABASE MANAGEMENT SYTEM:
+        dBASE III;
+     # DATABASE FILE EXTENSION:
+        dbf
+     # PROJECT WORK SPACE:
+        D:\Temp\Nordland\
+     # IMPORT FILE:
+        [None]
+     # MAP FILE:
+        [None]
+     # DISTANCE TABLE:
+        [None]
+     # ORIGIN FILE:
+        [None]
+     # DESTINATION FILE:
+        [None]
+     # FLOW FILE:
+        [None]
+     # FLOW TABLE:
+        [None]
+     # SYMBOLOGY FILE:
+        [Default]
+     # BACKGROUND BITMAP FILE:
+        [None]
+     # EXPORT FILE:
+        [None]
+     # MAP EXTENT REFERENCE:
+        [No view set yet]
+        
+     # X-COORDINATE LOWER LEFT CORNER:
+        0
+     # Y-COORDINATE LOWER LEFT CORNER:
+        0
+     # X-COORDINATE UPPER RIGHT CORNER:
+        0
+     # Y-COORDINATE UPPER RIGHT CORNER:
+        0
+     # MAP MEASUREMENT UNIT:
+        
+# END PROJECT SECTION
+# BEGIN FILE CONVERSION SECTION
+     # CONVERT OPTION:
+        arcview (shape) -> bna
+     # INPUT FOLDER:
+        D:\Temp\Nordland\
+     # INPUT FILE:
+        PointsXX.shp
+     # OUTPUT FOLDER:
+        D:\Temp\Nordland\
+     # OUTPUT FILE:
+        PointXX.BNA
+     # OUTPUT FILE MODE:
+        Overwrite
+     # NAME LABEL ITEM:
+        LABELYY           
+     # DATA TYPE LABEL ITEM:
+        Text     
+# END FILE CONVERSION SECTION
+# BEGIN FILE CONVERSION SECTION
+     # CONVERT OPTION:
+        arcview (shape) -> bna
+     # INPUT FOLDER:
+        D:\Temp\Nordland\
+     # INPUT FILE:
+        RoadsXX.shp
+     # OUTPUT FOLDER:
+        D:\Temp\Nordland\
+     # OUTPUT FILE:
+        RoadsXX.BNA
+     # OUTPUT FILE MODE:
+        Overwrite
+     # NAME LABEL ITEM:
+        BN2000_YY         
+     # DATA TYPE LABEL ITEM:
+        Double   
+# END FILE CONVERSION SECTION
+# BEGIN FILE CONVERSION SECTION
+     # CONVERT OPTION:
+        bna -> flowmap
+     # INPUT FOLDER:
+        D:\Temp\Nordland\
+     # INPUT FILE:
+        PointXX.BNA
+     # OUTPUT FOLDER:
+        D:\Temp\Nordland\
+     # OUTPUT FILE:
+        PointXX.006
+     # OUTPUT FILE MODE:
+        Overwrite
+     # OBJECT TYPE:
+        point
+# END FILE CONVERSION SECTION
+# BEGIN FILE CONVERSION SECTION
+     # CONVERT OPTION:
+        bna -> flowmap
+     # INPUT FOLDER:
+        D:\Temp\Nordland\
+     # INPUT FILE:
+        RoadsXX.BNA
+     # OUTPUT FOLDER:
+        D:\Temp\Nordland\
+     # OUTPUT FILE:
+        RoadsXX.006
+     # OUTPUT FILE MODE:
+        Overwrite
+     # OBJECT TYPE:
+        line
+     # BEGIN REPLY
+        Yes
+     # END REPLY
+# END FILE CONVERSION SECTION
+# BEGIN COPY FIELDS SECTION
+     # TARGET FILE:
+        D:\Temp\Nordland\ROADSXX3.DBF
+     # KEY FIELD IN TARGET FILE:
+        LABEL
+     # SOURCE FILE:
+        D:\Temp\Nordland\RoadsXX.dbf
+     # KEY FIELD IN SOURCE FILE:
+        BN2000_YY
+     # NUMBER OF SELECTED FIELDS:
+        11YY 
+     # LIST OF SELECTED FIELDS:
+        ZZSPEEDZZ
+        ZZTIME_FORTHZZ
+        ZZTIME_BACKZZ
+        ZZACCESSZZ
+        ZZROUTEZZ
+        ZZECON_FORTHZZ
+        ZZECON_BACKZZ
+        ZZRURA_FORTHZZ
+        ZZRURA_BACKZZ
+        ZZTOUR_FORTHZZ
+        ZZTOUR_BACKZZ
+# END COPY FIELDS SECTION
+# MENU BUTTON: options
+   # MENU BUTTON: mode of operation
+      # MENU BUTTON: interactive

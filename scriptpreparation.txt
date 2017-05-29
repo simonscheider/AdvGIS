@@ -1,0 +1,11 @@
+Advice to students:
+
+- Do not modify the text in the MOT.xls file which is not referring to a variable file/field of your group. 
+
+- Do not try to add more than 4 alternatives. If you have more, select 4 of your (best) alternatives.
+
+- Students should indicate also the identifier name of their start and end exits.
+
+
+
+

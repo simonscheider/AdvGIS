@@ -1,0 +1,35 @@
+Replace all entries in column 'Your Variable' with values pertaining to your group's data sets,
+XX' refers to your group number,
+,
+Description,Your Variable
+Input Data Folder,H:\AdvGIS\Group18
+"Name Shape File containing BeginPoint, EndPoint and all MidPoints ",Points18.shp
+Fieldname Unique Identifier in Points shape file,ExitName
+Name Shape File containing integrated roadnetwork (current plus alternatives),ROADS18.shp
+Fieldname Unique Identifier in integrated road shape file,BN2000_
+Number of alternative routes (incl straight line),4
+Reference Name of alternative 1,Economic
+Reference Name of alternative 2,Noise
+Reference Name of alternative 3,Tourist
+Reference Name of alternative 4,Nature
+,
+Names of  relevant fields in attribute table of integrated road shape file,
+Travel speed by car in kmph for all roads,"""SPEED"""
+Travel time Forth in current situation only,"""TIME_FORTH"""
+Travel time Back in current situation only,"""TIME_BACK"""
+Midway access to all road segments,"""ACCESS"""
+Reference name current or alternative road,"""Route"""
+Travel time Forth alternative 1 and current,"""ECON_FORTH"""
+Travel time Back alternative 1 and current,"""ECON_BACK"""
+Travel time Forth alternative 2 and current,"""NOIS_FORTH"""
+Travel time Back alternative 2 and current,"""NOIS_BACK"""
+Travel time Forth alternative 3 and current,"""TOUR_FORTH"""
+Travel time Back alternative 3 and current,"""TOUR_BACK"""
+Travel time Forth alternative 4 and current,"""NAT_FORTH"""
+Travel time Back alternative 4 and current,"""NAT_BACK"""
+,
+,
+Mail this list when completed to t.dejong@geo.uu.nl,
+Do not forget to make shape files ,Points18.shp
+and,ROADS18.shp
+available on,H:\AdvGIS\Group18

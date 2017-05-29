@@ -1,0 +1,1619 @@
+# ----------------FLOWMAP FULL LOG FILE HEADER----------------
+# File: U:\ADVGIS\Route22\FMlog001.flg
+# Creation date: 05-08-2013
+# Creation time: 15:45:58
+# ------------------------------------------------------------
+# ALIAS U:\ADVGIS\Route22\FMlog001.flg
+# BEGIN PROJECT SECTION
+     # PROJECT RESET:
+        YES
+     # PROJECT FILE:
+        U:\ADVGIS\Route22\FMprj001.fpf
+     # PROJECT FILE VERSION:
+        7.4
+     # DATABASE MANAGEMENT SYTEM:
+        dBASE III;
+     # DATABASE FILE EXTENSION:
+        dbf
+     # PROJECT WORK SPACE:
+        U:\ADVGIS\Route22\
+     # IMPORT FILE:
+        [None]
+     # MAP FILE:
+        U:\ADVGIS\Route22\ROADS22.006
+     # DISTANCE TABLE:
+        [None]
+     # ORIGIN FILE:
+        U:\ADVGIS\Route22\POINT221.DBF
+     # DESTINATION FILE:
+        U:\ADVGIS\Route22\POINT221.DBF
+     # FLOW FILE:
+        [None]
+     # FLOW TABLE:
+        [None]
+     # SYMBOLOGY FILE:
+        [Default]
+     # BACKGROUND BITMAP FILE:
+        [None]
+     # EXPORT FILE:
+        [None]
+     # MAP EXTENT REFERENCE:
+        U:\ADVGIS\Route22\POINT221.DBF
+        U:\ADVGIS\Route22\POINT221.DBF
+        
+        
+     # MAP MEASUREMENT UNIT:
+        Meters
+# END PROJECT SECTION
+# BEGIN VIEW SECTION
+     # VIEW OPTION:
+        zoom out (+100%)
+     # REFERENCE:
+        [Manual Zoom Out]
+        
+# END VIEW SECTION
+# END VIEW SECTION
+# BEGIN PALETTE ENTRY SECTION
+     # PALETTE TYPE:
+        Outline
+     # PALETTE NUMBER (LEFT-RIGHT/TOP-DOWN = 0-31):
+        0 
+     # BACKGROUND COLOR RED INTENSITY (0-255):
+         238 
+     # BACKGROUND COLOR GREEN INTENSITY (0-255):
+         238 
+     # BACKGROUND COLOR BLUE INTENSITY (0-255):
+         238 
+     # SYMBOL COLOR RED INTENSITY (0-255):
+         205 
+     # SYMBOL COLOR GREEN INTENSITY (0-255):
+         204 
+     # SYMBOL COLOR BLUE INTENSITY (0-255):
+         205 
+     # SYMBOL STYLE:
+        Solid
+     # SYMBOL SIZE (1-25):
+        6 
+# END PALETTE ENTRY SECTION
+# BEGIN PALETTE ENTRY SECTION
+     # PALETTE TYPE:
+        Outline
+     # PALETTE NUMBER (LEFT-RIGHT/TOP-DOWN = 0-31):
+        1 
+     # BACKGROUND COLOR RED INTENSITY (0-255):
+         238 
+     # BACKGROUND COLOR GREEN INTENSITY (0-255):
+         238 
+     # BACKGROUND COLOR BLUE INTENSITY (0-255):
+         238 
+     # SYMBOL COLOR RED INTENSITY (0-255):
+         255 
+     # SYMBOL COLOR GREEN INTENSITY (0-255):
+         0 
+     # SYMBOL COLOR BLUE INTENSITY (0-255):
+         127 
+     # SYMBOL STYLE:
+        Solid
+     # SYMBOL SIZE (1-25):
+        2 
+# END PALETTE ENTRY SECTION
+# BEGIN PALETTE ENTRY SECTION
+     # PALETTE TYPE:
+        Outline
+     # PALETTE NUMBER (LEFT-RIGHT/TOP-DOWN = 0-31):
+        2 
+     # BACKGROUND COLOR RED INTENSITY (0-255):
+         238 
+     # BACKGROUND COLOR GREEN INTENSITY (0-255):
+         238 
+     # BACKGROUND COLOR BLUE INTENSITY (0-255):
+         238 
+     # SYMBOL COLOR RED INTENSITY (0-255):
+         255 
+     # SYMBOL COLOR GREEN INTENSITY (0-255):
+         204 
+     # SYMBOL COLOR BLUE INTENSITY (0-255):
+         0 
+     # SYMBOL STYLE:
+        Solid
+     # SYMBOL SIZE (1-25):
+        2
+# END PALETTE ENTRY SECTION
+# BEGIN PALETTE ENTRY SECTION
+     # PALETTE TYPE:
+        Outline
+     # PALETTE NUMBER (LEFT-RIGHT/TOP-DOWN = 0-31):
+        3 
+     # BACKGROUND COLOR RED INTENSITY (0-255):
+         238 
+     # BACKGROUND COLOR GREEN INTENSITY (0-255):
+         238 
+     # BACKGROUND COLOR BLUE INTENSITY (0-255):
+         238 
+     # SYMBOL COLOR RED INTENSITY (0-255):
+         0 
+     # SYMBOL COLOR GREEN INTENSITY (0-255):
+         127 
+     # SYMBOL COLOR BLUE INTENSITY (0-255):
+         255 
+     # SYMBOL STYLE:
+        Solid
+     # SYMBOL SIZE (1-25):
+        2 
+# END PALETTE ENTRY SECTION
+# BEGIN PALETTE ENTRY SECTION
+     # PALETTE TYPE:
+        Outline
+     # PALETTE NUMBER (LEFT-RIGHT/TOP-DOWN = 0-31):
+        11 
+     # BACKGROUND COLOR RED INTENSITY (0-255):
+         238 
+     # BACKGROUND COLOR GREEN INTENSITY (0-255):
+         238 
+     # BACKGROUND COLOR BLUE INTENSITY (0-255):
+         238 
+     # SYMBOL COLOR RED INTENSITY (0-255):
+         255 
+     # SYMBOL COLOR GREEN INTENSITY (0-255):
+         64 
+     # SYMBOL COLOR BLUE INTENSITY (0-255):
+         255 
+     # SYMBOL STYLE:
+        Solid
+     # SYMBOL SIZE (1-25):
+        6 
+# END PALETTE ENTRY SECTION
+# BEGIN PALETTE ENTRY SECTION
+     # PALETTE TYPE:
+        Outline
+     # PALETTE NUMBER (LEFT-RIGHT/TOP-DOWN = 0-31):
+        12 
+     # BACKGROUND COLOR RED INTENSITY (0-255):
+         238 
+     # BACKGROUND COLOR GREEN INTENSITY (0-255):
+         238 
+     # BACKGROUND COLOR BLUE INTENSITY (0-255):
+         238 
+     # SYMBOL COLOR RED INTENSITY (0-255):
+         255 
+     # SYMBOL COLOR GREEN INTENSITY (0-255):
+         255 
+     # SYMBOL COLOR BLUE INTENSITY (0-255):
+         64 
+     # SYMBOL STYLE:
+        Solid
+     # SYMBOL SIZE (1-25):
+        6 
+# END PALETTE ENTRY SECTION
+# BEGIN PALETTE ENTRY SECTION
+     # PALETTE TYPE:
+        Outline
+     # PALETTE NUMBER (LEFT-RIGHT/TOP-DOWN = 0-31):
+        13 
+     # BACKGROUND COLOR RED INTENSITY (0-255):
+         238 
+     # BACKGROUND COLOR GREEN INTENSITY (0-255):
+         238 
+     # BACKGROUND COLOR BLUE INTENSITY (0-255):
+         238 
+     # SYMBOL COLOR RED INTENSITY (0-255):
+         64 
+     # SYMBOL COLOR GREEN INTENSITY (0-255):
+         255 
+     # SYMBOL COLOR BLUE INTENSITY (0-255):
+         255 
+     # SYMBOL STYLE:
+        Solid
+     # SYMBOL SIZE (1-25):
+        6 
+# END PALETTE ENTRY SECTION
+# BEGIN SUBSET SECTION
+     # SUBSET OPTION:
+        select objects origin file
+     # SUBSET METHOD:
+        LIST
+     # SUBSET FIELD:
+        LABEL
+     # NUMBER OF SELECTED OBJECTS:
+        1 
+     # LIST OF SELECTED OBJECTS:
+        "Dokkum02"
+# END SUBSET SECTION
+# BEGIN SUBSET SECTION
+     # SUBSET OPTION:
+        select objects destination file
+     # SUBSET METHOD:
+        LIST
+     # SUBSET FIELD:
+        LABEL
+     # NUMBER OF SELECTED OBJECTS:
+        1 
+     # LIST OF SELECTED OBJECTS:
+        "Nyega"
+# END SUBSET SECTION
+# BEGIN TRANSPORT NETWORK ANALYSIS SECTION
+     # CENTRES ARE IN:
+        DESTINATIONS FILE
+     # NAME ATTRIBUTE FILE:
+        U:\ADVGIS\Route22\ROADS223.DBF                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+     # FIELD NAME IMPEDANCE (OUT) ATTRIBUTE:
+        TIME_FORTH
+     # FIELD NAME IMPEDANCE (HOME) ATTRIBUTE:
+        TIME_BACK 
+     # CONNECT METHOD:
+        NODES
+     # FIELD NAME ACCESS ATTRIBUTE:
+        ACCESS    
+     # MULTIPLICATION FACTOR:
+         0 
+     # FIELD NAME POSITION ON PATH:
+        Currpath1
+     # FIELD DECIMALS POSITION ON PATH:
+        2
+# END TRANSPORT NETWORK ANALYSIS SECTION
+# BEGIN DRAW SECTION
+     # DRAW OPTION:
+        uniform drawing
+     # PALETTE NUMBER (LEFT-RIGHT/TOP-DOWN = 0-31):
+        8 
+# END DRAW SECTION
+# BEGIN SUBSET SECTION
+     # SUBSET OPTION:
+        select objects map file
+     # SUBSET METHOD:
+        RANGE  
+     # SUBSET FIELD:
+        CurrPATH1
+     # SUBSET LOWER BOUND:
+        1 
+     # SUBSET UPPER BOUND:
+        2 
+     # SELECTION TYPE:
+        SIMPLE
+# END SUBSET SECTION
+# BEGIN DRAW SECTION
+     # DRAW OPTION:
+        uniform drawing
+     # PALETTE NUMBER (LEFT-RIGHT/TOP-DOWN = 0-31):
+        0 
+# END DRAW SECTION
+# BEGIN SUBSET SECTION
+     # SUBSET OPTION:
+        select objects origin file
+     # SUBSET METHOD:
+        LIST
+     # SUBSET FIELD:
+        LABEL
+     # NUMBER OF SELECTED OBJECTS:
+        1 
+     # LIST OF SELECTED OBJECTS:
+        "Nyega"
+# END SUBSET SECTION
+# BEGIN SUBSET SECTION
+     # SUBSET OPTION:
+        select objects destination file
+     # SUBSET METHOD:
+        LIST
+     # SUBSET FIELD:
+        LABEL
+     # NUMBER OF SELECTED OBJECTS:
+        1 
+     # LIST OF SELECTED OBJECTS:
+        "Dokkum02"
+# END SUBSET SECTION
+# BEGIN TRANSPORT NETWORK ANALYSIS SECTION
+     # CENTRES ARE IN:
+        DESTINATIONS FILE
+     # NAME ATTRIBUTE FILE:
+        U:\ADVGIS\Route22\ROADS223.DBF                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+     # FIELD NAME IMPEDANCE (OUT) ATTRIBUTE:
+        TIME_FORTH
+     # FIELD NAME IMPEDANCE (HOME) ATTRIBUTE:
+        TIME_BACK 
+     # CONNECT METHOD:
+        NODES
+     # FIELD NAME ACCESS ATTRIBUTE:
+        ACCESS    
+     # MULTIPLICATION FACTOR:
+         0 
+     # FIELD NAME POSITION ON PATH:
+        CurrPath2
+     # FIELD DECIMALS POSITION ON PATH:
+        2
+# END TRANSPORT NETWORK ANALYSIS SECTION
+# BEGIN SUBSET SECTION
+     # SUBSET OPTION:
+        select objects map file
+     # SUBSET METHOD:
+        RANGE  
+     # SUBSET FIELD:
+        CurrPath2
+     # SUBSET LOWER BOUND:
+        1 
+     # SUBSET UPPER BOUND:
+        2 
+     # SELECTION TYPE:
+        SIMPLE
+     # BEGIN MESSAGE
+        Search range: 1 - 2
+        Actual range: 1 - 2
+        5 map objects selected
+        Label: 44076/53497/53502/53505/53518
+     # END MESSAGE
+# END SUBSET SECTION
+# BEGIN DRAW SECTION
+     # DRAW OPTION:
+        uniform drawing
+     # PALETTE NUMBER (LEFT-RIGHT/TOP-DOWN = 0-31):
+        14 
+# END DRAW SECTION
+# BEGIN REPLY
+   Yes
+# END REPLY
+     # BEGIN SUBSET SECTION
+          # SUBSET OPTION:
+             select objects map file
+          # SUBSET METHOD:
+             RANGE  
+          # SUBSET FIELD:
+             CURRPATH1
+          # SUBSET LOWER BOUND:
+             1 
+          # SUBSET UPPER BOUND:
+             2 
+          # SELECTION TYPE:
+             SIMPLE
+     # END SUBSET SECTION
+     # BEGIN COMPUTE VARIABLE SECTION
+          # WRITE RESULTS TO:
+             MAP OBJECTS
+          # FORMULA:
+             LENGTH * 60 / (SPEED * 1000)
+          # FIELD NAME:
+             CurrCost1
+          # FIELD DECIMALS:
+             2
+          # VALUE FOR UNSELECTED RECORDS:
+             [NULL]
+     # END COMPUTE VARIABLE SECTION
+     # BEGIN COMPUTE VARIABLE SECTION
+          # WRITE RESULTS TO:
+             MAP OBJECTS
+          # FORMULA:
+             @sum ( CURRCOST1 )
+          # FIELD NAME:
+             CURRCSUM1
+          # FIELD DECIMALS:
+             1
+          # VALUE FOR UNSELECTED RECORDS:
+             [NULL]
+     # END COMPUTE VARIABLE SECTION
+     # BEGIN SUBSET SECTION
+          # SUBSET OPTION:
+             select objects map file
+          # SUBSET METHOD:
+             RANDOM 
+          # SELECTION TYPE:
+             SUBSET
+          # NUMBER OF OBJECTS:
+             3 
+     # END SUBSET SECTION
+     # BEGIN DISPLAY LABELS SECTION
+          # DISPLAY LABELS OPTION:
+             show labels from map file
+          # VARIABLE NAME:
+             CURRCSUM1
+          # SCREEN RESOLUTION UNIT:
+             398
+          # X-OFFSET:
+             0
+          # Y-OFFSET:
+             0
+          # RED INTENSITY (0-255):
+             128
+          # GREEN INTENSITY (0-255):
+             128
+          # BLUE INTENSITY (0-255):
+             128
+          # FONT BOLD:
+             TRUE
+          # FONT ITALIC:
+             FALSE
+          # FONT NAME:
+             MS Sans Serif
+          # FONT SIZE:
+             14
+          # FONT STRIKETHRU:
+             FALSE
+          # FONT UNDERLINE:
+             FALSE
+     # END DISPLAY LABELS SECTION
+     # BEGIN UNDO SUBSET SECTION
+          # UNDO SUBSET OPTION:
+             select objects map file
+     # END UNDO SUBSET SECTION
+# BEGIN SUBSET SECTION
+     # SUBSET OPTION:
+        select objects origin file
+     # SUBSET METHOD:
+        LIST
+     # SUBSET FIELD:
+        LABEL
+     # NUMBER OF SELECTED OBJECTS:
+        1 
+     # LIST OF SELECTED OBJECTS:
+        "Dokkum02"
+# END SUBSET SECTION
+# BEGIN SUBSET SECTION
+     # SUBSET OPTION:
+        select objects destination file
+     # SUBSET METHOD:
+        LIST
+     # SUBSET FIELD:
+        LABEL
+     # NUMBER OF SELECTED OBJECTS:
+        1 
+     # LIST OF SELECTED OBJECTS:
+        "Nyega"
+# END SUBSET SECTION
+# BEGIN TRANSPORT NETWORK ANALYSIS SECTION
+     # CENTRES ARE IN:
+        DESTINATIONS FILE
+     # NAME ATTRIBUTE FILE:
+        U:\ADVGIS\Route22\ROADS223.DBF                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+     # FIELD NAME IMPEDANCE (OUT) ATTRIBUTE:
+        NAT_FORTH
+     # FIELD NAME IMPEDANCE (HOME) ATTRIBUTE:
+        NAT_BACK 
+     # CONNECT METHOD:
+        NODES
+     # FIELD NAME ACCESS ATTRIBUTE:
+        ACCESS    
+     # MULTIPLICATION FACTOR:
+         0 
+     # FIELD NAME POSITION ON PATH:
+        ALT1path1
+     # FIELD DECIMALS POSITION ON PATH:
+        2
+# END TRANSPORT NETWORK ANALYSIS SECTION
+# BEGIN SUBSET SECTION
+     # SUBSET OPTION:
+        select objects map file
+     # SUBSET METHOD:
+        RANGE  
+     # SUBSET FIELD:
+        ALT1PATH1
+     # SUBSET LOWER BOUND:
+        1 
+     # SUBSET UPPER BOUND:
+        2 
+     # SELECTION TYPE:
+        SIMPLE
+# END SUBSET SECTION
+# BEGIN DRAW SECTION
+     # DRAW OPTION:
+        uniform drawing
+     # PALETTE NUMBER (LEFT-RIGHT/TOP-DOWN = 0-31):
+        11 
+# END DRAW SECTION
+# BEGIN SUBSET SECTION
+     # SUBSET OPTION:
+        select objects origin file
+     # SUBSET METHOD:
+        LIST
+     # SUBSET FIELD:
+        LABEL
+     # NUMBER OF SELECTED OBJECTS:
+        1 
+     # LIST OF SELECTED OBJECTS:
+        "Nyega"
+# END SUBSET SECTION
+# BEGIN SUBSET SECTION
+     # SUBSET OPTION:
+        select objects destination file
+     # SUBSET METHOD:
+        LIST
+     # SUBSET FIELD:
+        LABEL
+     # NUMBER OF SELECTED OBJECTS:
+        1 
+     # LIST OF SELECTED OBJECTS:
+        "Dokkum02"
+# END SUBSET SECTION
+# BEGIN TRANSPORT NETWORK ANALYSIS SECTION
+     # CENTRES ARE IN:
+        DESTINATIONS FILE
+     # NAME ATTRIBUTE FILE:
+        U:\ADVGIS\Route22\ROADS223.DBF                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+     # FIELD NAME IMPEDANCE (OUT) ATTRIBUTE:
+        NAT_FORTH
+     # FIELD NAME IMPEDANCE (HOME) ATTRIBUTE:
+        NAT_BACK 
+     # CONNECT METHOD:
+        NODES
+     # FIELD NAME ACCESS ATTRIBUTE:
+        ACCESS    
+     # MULTIPLICATION FACTOR:
+         0 
+     # FIELD NAME POSITION ON PATH:
+        ALT1Path2
+     # FIELD DECIMALS POSITION ON PATH:
+        2
+     # BEGIN MESSAGE
+        Writing of field(s) CurrPath2 completed successfully
+     # END MESSAGE
+# END TRANSPORT NETWORK ANALYSIS SECTION
+# BEGIN SUBSET SECTION
+     # SUBSET OPTION:
+        select objects map file
+     # SUBSET METHOD:
+        RANGE  
+     # SUBSET FIELD:
+        ALT1Path2
+     # SUBSET LOWER BOUND:
+        1 
+     # SUBSET UPPER BOUND:
+        2 
+     # SELECTION TYPE:
+        SIMPLE
+     # BEGIN MESSAGE
+        Search range: 1 - 2
+        Actual range: 1 - 2
+        5 map objects selected
+        Label: 44076/53497/53502/53505/53518
+     # END MESSAGE
+# END SUBSET SECTION
+# BEGIN DRAW SECTION
+     # DRAW OPTION:
+        uniform drawing
+     # PALETTE NUMBER (LEFT-RIGHT/TOP-DOWN = 0-31):
+        1 
+# END DRAW SECTION
+# BEGIN REPLY
+   Yes
+# END REPLY
+     # BEGIN SUBSET SECTION
+          # SUBSET OPTION:
+             select objects map file
+          # SUBSET METHOD:
+             RANGE  
+          # SUBSET FIELD:
+             ALT1PATH1
+          # SUBSET LOWER BOUND:
+             1 
+          # SUBSET UPPER BOUND:
+             2 
+          # SELECTION TYPE:
+             SIMPLE
+     # END SUBSET SECTION
+     # BEGIN COMPUTE VARIABLE SECTION
+          # WRITE RESULTS TO:
+             MAP OBJECTS
+          # FORMULA:
+             LENGTH * 60 / ( SPEED * 1000 )
+          # FIELD NAME:
+             ALT1Cost1
+          # FIELD DECIMALS:
+             2
+          # VALUE FOR UNSELECTED RECORDS:
+             [NULL]
+     # END COMPUTE VARIABLE SECTION
+     # BEGIN COMPUTE VARIABLE SECTION
+          # WRITE RESULTS TO:
+             MAP OBJECTS
+          # FORMULA:
+             @sum ( ALT1COST1 )
+          # FIELD NAME:
+             ALT1CSUM1
+          # FIELD DECIMALS:
+             1
+          # VALUE FOR UNSELECTED RECORDS:
+             [NULL]
+     # END COMPUTE VARIABLE SECTION
+     # BEGIN SUBSET SECTION
+          # SUBSET OPTION:
+             select objects map file
+          # SUBSET METHOD:
+             RANDOM 
+          # SELECTION TYPE:
+             SUBSET
+          # NUMBER OF OBJECTS:
+             3 
+     # END SUBSET SECTION
+     # BEGIN DISPLAY LABELS SECTION
+          # DISPLAY LABELS OPTION:
+             show labels from map file
+          # VARIABLE NAME:
+             ALT1CSUM1
+          # SCREEN RESOLUTION UNIT:
+             398
+          # X-OFFSET:
+             0
+          # Y-OFFSET:
+             0
+          # RED INTENSITY (0-255):
+             128
+          # GREEN INTENSITY (0-255):
+             128
+          # BLUE INTENSITY (0-255):
+             128
+          # FONT BOLD:
+             TRUE
+          # FONT ITALIC:
+             FALSE
+          # FONT NAME:
+             MS Sans Serif
+          # FONT SIZE:
+             14
+          # FONT STRIKETHRU:
+             FALSE
+          # FONT UNDERLINE:
+             FALSE
+     # END DISPLAY LABELS SECTION
+     # BEGIN UNDO SUBSET SECTION
+          # UNDO SUBSET OPTION:
+             select objects map file
+     # END UNDO SUBSET SECTION
+# BEGIN CHANGE TEXT SECTION
+     # CHANGE TEXT OPTION:
+        Edit Map Title Text                                                                                                                                                                                                                                                 
+     # BEGIN NEW TEXT:
+        Roads22
+        
+        
+        Check shortest paths current and Alt 1  
+        
+        Correct: Yes / No
+        
+
+        Check all working in both directions 
+        
+        Correct: Yes / No
+        
+               
+        Check travel time reductions 
+        
+        Correct: Yes / No
+        
+         
+        
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+     # END NEW TEXT:
+     # FONT BOLD:
+        TRUE
+     # FONT ITALIC:
+        FALSE
+     # FONT NAME:
+        MS Sans Serif
+     # FONT SIZE:
+        14
+     # FONT STRIKETHRU:
+        FALSE
+     # FONT UNDERLINE:
+        FALSE
+# END CHANGE TEXT SECTION
+# BEGIN SAVE/PRINT JPEG SECTION
+     # WINDOW TITLE:
+        Flowmap - Professional Release "#version#"       
+     # SAVE OPTION:
+        save flowmap window
+     # SAVE MODE:
+        File
+     # SAVE IN FOLDER:
+        U:\ADVGIS\Route22\
+     # SAVE AS FILE:
+        check31.jpg
+# END SAVE/PRINT JPEG SECTION
+# BREAK
+# BEGIN DRAW SECTION
+     # DRAW OPTION:
+        remove top legend entry
+# END DRAW SECTION
+# BEGIN DRAW SECTION
+     # DRAW OPTION:
+        remove top legend entry
+# END DRAW SECTION
+# BEGIN DRAW SECTION
+     # DRAW OPTION:
+        remove top legend entry
+# END DRAW SECTION
+
+# BEGIN SUBSET SECTION
+     # SUBSET OPTION:
+        select objects origin file
+     # SUBSET METHOD:
+        LIST
+     # SUBSET FIELD:
+        LABEL
+     # NUMBER OF SELECTED OBJECTS:
+        1 
+     # LIST OF SELECTED OBJECTS:
+        "Dokkum02"
+# END SUBSET SECTION
+# BEGIN SUBSET SECTION
+     # SUBSET OPTION:
+        select objects destination file
+     # SUBSET METHOD:
+        LIST
+     # SUBSET FIELD:
+        LABEL
+     # NUMBER OF SELECTED OBJECTS:
+        1 
+     # LIST OF SELECTED OBJECTS:
+        "Nyega"
+# END SUBSET SECTION
+# BEGIN TRANSPORT NETWORK ANALYSIS SECTION
+     # CENTRES ARE IN:
+        DESTINATIONS FILE
+     # NAME ATTRIBUTE FILE:
+        U:\ADVGIS\Route22\ROADS223.DBF                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+     # FIELD NAME IMPEDANCE (OUT) ATTRIBUTE:
+        MONU_FORTH
+     # FIELD NAME IMPEDANCE (HOME) ATTRIBUTE:
+        MONU_BACK 
+     # CONNECT METHOD:
+        NODES
+     # FIELD NAME ACCESS ATTRIBUTE:
+        ACCESS    
+     # MULTIPLICATION FACTOR:
+         0 
+     # FIELD NAME POSITION ON PATH:
+        ALT2path1
+     # FIELD DECIMALS POSITION ON PATH:
+        2
+# END TRANSPORT NETWORK ANALYSIS SECTION
+# BEGIN SUBSET SECTION
+     # SUBSET OPTION:
+        select objects map file
+     # SUBSET METHOD:
+        RANGE  
+     # SUBSET FIELD:
+        ALT2PATH1
+     # SUBSET LOWER BOUND:
+        1 
+     # SUBSET UPPER BOUND:
+        2 
+     # SELECTION TYPE:
+        SIMPLE
+# END SUBSET SECTION
+# BEGIN DRAW SECTION
+     # DRAW OPTION:
+        uniform drawing
+     # PALETTE NUMBER (LEFT-RIGHT/TOP-DOWN = 0-31):
+        12 
+# END DRAW SECTION
+# BEGIN SUBSET SECTION
+     # SUBSET OPTION:
+        select objects origin file
+     # SUBSET METHOD:
+        LIST
+     # SUBSET FIELD:
+        LABEL
+     # NUMBER OF SELECTED OBJECTS:
+        1 
+     # LIST OF SELECTED OBJECTS:
+        "Nyega"
+# END SUBSET SECTION
+# BEGIN SUBSET SECTION
+     # SUBSET OPTION:
+        select objects destination file
+     # SUBSET METHOD:
+        LIST
+     # SUBSET FIELD:
+        LABEL
+     # NUMBER OF SELECTED OBJECTS:
+        1 
+     # LIST OF SELECTED OBJECTS:
+        "Dokkum02"
+# END SUBSET SECTION
+# BEGIN TRANSPORT NETWORK ANALYSIS SECTION
+     # CENTRES ARE IN:
+        DESTINATIONS FILE
+     # NAME ATTRIBUTE FILE:
+        U:\ADVGIS\Route22\ROADS223.DBF                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+     # FIELD NAME IMPEDANCE (OUT) ATTRIBUTE:
+        MONU_FORTH
+     # FIELD NAME IMPEDANCE (HOME) ATTRIBUTE:
+        MONU_BACK 
+     # CONNECT METHOD:
+        NODES
+     # FIELD NAME ACCESS ATTRIBUTE:
+        ACCESS    
+     # MULTIPLICATION FACTOR:
+         0 
+     # FIELD NAME POSITION ON PATH:
+        ALT2Path2
+     # FIELD DECIMALS POSITION ON PATH:
+        2
+# END TRANSPORT NETWORK ANALYSIS SECTION
+# BEGIN SUBSET SECTION
+     # SUBSET OPTION:
+        select objects map file
+     # SUBSET METHOD:
+        RANGE  
+     # SUBSET FIELD:
+        ALT2Path2
+     # SUBSET LOWER BOUND:
+        1 
+     # SUBSET UPPER BOUND:
+        2 
+     # SELECTION TYPE:
+        SIMPLE
+# END SUBSET SECTION
+# BEGIN DRAW SECTION
+     # DRAW OPTION:
+        uniform drawing
+     # PALETTE NUMBER (LEFT-RIGHT/TOP-DOWN = 0-31):
+        2 
+# END DRAW SECTION
+# BEGIN REPLY
+   Yes
+# END REPLY
+     # BEGIN SUBSET SECTION
+          # SUBSET OPTION:
+             select objects map file
+          # SUBSET METHOD:
+             RANGE  
+          # SUBSET FIELD:
+             ALT2PATH1
+          # SUBSET LOWER BOUND:
+             1 
+          # SUBSET UPPER BOUND:
+             2 
+          # SELECTION TYPE:
+             SIMPLE
+     # END SUBSET SECTION
+     # BEGIN COMPUTE VARIABLE SECTION
+          # WRITE RESULTS TO:
+             MAP OBJECTS
+          # FORMULA:
+             LENGTH * 60 / ( SPEED * 1000 )
+          # FIELD NAME:
+             ALT2Cost1
+          # FIELD DECIMALS:
+             2
+          # VALUE FOR UNSELECTED RECORDS:
+             [NULL]
+     # END COMPUTE VARIABLE SECTION
+     # BEGIN COMPUTE VARIABLE SECTION
+          # WRITE RESULTS TO:
+             MAP OBJECTS
+          # FORMULA:
+             @sum ( ALT2COST1 )
+          # FIELD NAME:
+             ALT2CSUM1
+          # FIELD DECIMALS:
+             1
+          # VALUE FOR UNSELECTED RECORDS:
+             [NULL]
+     # END COMPUTE VARIABLE SECTION
+     # BEGIN SUBSET SECTION
+          # SUBSET OPTION:
+             select objects map file
+          # SUBSET METHOD:
+             RANDOM 
+          # SELECTION TYPE:
+             SUBSET
+          # NUMBER OF OBJECTS:
+             3 
+     # END SUBSET SECTION
+     # BEGIN DISPLAY LABELS SECTION
+          # DISPLAY LABELS OPTION:
+             show labels from map file
+          # VARIABLE NAME:
+             ALT2CSUM1
+          # SCREEN RESOLUTION UNIT:
+             398
+          # X-OFFSET:
+             0
+          # Y-OFFSET:
+             0
+          # RED INTENSITY (0-255):
+             128
+          # GREEN INTENSITY (0-255):
+             128
+          # BLUE INTENSITY (0-255):
+             128
+          # FONT BOLD:
+             TRUE
+          # FONT ITALIC:
+             FALSE
+          # FONT NAME:
+             MS Sans Serif
+          # FONT SIZE:
+             14
+          # FONT STRIKETHRU:
+             FALSE
+          # FONT UNDERLINE:
+             FALSE
+     # END DISPLAY LABELS SECTION
+     # BEGIN UNDO SUBSET SECTION
+          # UNDO SUBSET OPTION:
+             select objects map file
+     # END UNDO SUBSET SECTION
+# BEGIN CHANGE TEXT SECTION
+     # CHANGE TEXT OPTION:
+        Edit Map Title Text                                                                                                                                                                                                                                                 
+     # BEGIN NEW TEXT:
+        Route 22
+        
+        
+        Check shortest paths current and Alt 2
+        
+        Correct: Yes / No
+        
+
+        Check all working in both directions 
+        
+        Correct: Yes / No
+        
+               
+        Check travel time reductions 
+        
+        Correct: Yes / No
+        
+         
+        
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+     # END NEW TEXT:
+     # FONT BOLD:
+        TRUE
+     # FONT ITALIC:
+        FALSE
+     # FONT NAME:
+        MS Sans Serif
+     # FONT SIZE:
+        14
+     # FONT STRIKETHRU:
+        FALSE
+     # FONT UNDERLINE:
+        FALSE
+# END CHANGE TEXT SECTION
+# BEGIN SAVE/PRINT JPEG SECTION
+    # WINDOW TITLE:
+      Flowmap - Professional Release "#version#"       
+    # SAVE OPTION:
+      save flowmap window
+    # SAVE MODE:
+      File
+    # SAVE IN FOLDER:
+      U:\ADVGIS\Route22\
+    # SAVE AS FILE:
+      Check32.jpg
+# END SAVE/PRINT JPEG SECTION
+# BREAK
+# BEGIN DRAW SECTION
+     # DRAW OPTION:
+        remove top legend entry
+# END DRAW SECTION
+# BEGIN DRAW SECTION
+     # DRAW OPTION:
+        remove top legend entry
+# END DRAW SECTION
+# BEGIN DRAW SECTION
+     # DRAW OPTION:
+        remove top legend entry
+# END DRAW SECTION
+# BEGIN SUBSET SECTION
+     # SUBSET OPTION:
+        select objects origin file
+     # SUBSET METHOD:
+        LIST
+     # SUBSET FIELD:
+        LABEL
+     # NUMBER OF SELECTED OBJECTS:
+        1 
+     # LIST OF SELECTED OBJECTS:
+        "Dokkum02"
+# END SUBSET SECTION
+# BEGIN SUBSET SECTION
+     # SUBSET OPTION:
+        select objects destination file
+     # SUBSET METHOD:
+        LIST
+     # SUBSET FIELD:
+        LABEL
+     # NUMBER OF SELECTED OBJECTS:
+        1 
+     # LIST OF SELECTED OBJECTS:
+        "Nyega"
+# END SUBSET SECTION
+# BEGIN TRANSPORT NETWORK ANALYSIS SECTION
+     # CENTRES ARE IN:
+        DESTINATIONS FILE
+     # NAME ATTRIBUTE FILE:
+        U:\ADVGIS\Route22\ROADS223.DBF                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+     # FIELD NAME IMPEDANCE (OUT) ATTRIBUTE:
+        TOUR_FORTH
+     # FIELD NAME IMPEDANCE (HOME) ATTRIBUTE:
+        TOUR_BACK 
+     # CONNECT METHOD:
+        NODES
+     # FIELD NAME ACCESS ATTRIBUTE:
+        ACCESS    
+     # MULTIPLICATION FACTOR:
+         0 
+     # FIELD NAME POSITION ON PATH:
+        ALT3path1
+     # FIELD DECIMALS POSITION ON PATH:
+        2
+# END TRANSPORT NETWORK ANALYSIS SECTION
+# BEGIN SUBSET SECTION
+     # SUBSET OPTION:
+        select objects map file
+     # SUBSET METHOD:
+        RANGE  
+     # SUBSET FIELD:
+        ALT3PATH1
+     # SUBSET LOWER BOUND:
+        1 
+     # SUBSET UPPER BOUND:
+        2 
+     # SELECTION TYPE:
+        SIMPLE
+# END SUBSET SECTION
+# BEGIN DRAW SECTION
+     # DRAW OPTION:
+        uniform drawing
+     # PALETTE NUMBER (LEFT-RIGHT/TOP-DOWN = 0-31):
+        13 
+# END DRAW SECTION
+# BEGIN TRANSPORT NETWORK ANALYSIS SECTION
+     # CENTRES ARE IN:
+        DESTINATIONS FILE
+     # NAME ATTRIBUTE FILE:
+        U:\ADVGIS\Route22\ROADS223.DBF                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+     # FIELD NAME IMPEDANCE (OUT) ATTRIBUTE:
+        TOUR_FORTH
+     # FIELD NAME IMPEDANCE (HOME) ATTRIBUTE:
+        TOUR_BACK 
+     # CONNECT METHOD:
+        NODES
+     # FIELD NAME ACCESS ATTRIBUTE:
+        ACCESS    
+     # MULTIPLICATION FACTOR:
+         0 
+     # FIELD NAME POSITION ON PATH:
+        ALT3Path2
+     # FIELD DECIMALS POSITION ON PATH:
+        2
+# END TRANSPORT NETWORK ANALYSIS SECTION
+# BEGIN SUBSET SECTION
+     # SUBSET OPTION:
+        select objects map file
+     # SUBSET METHOD:
+        RANGE  
+     # SUBSET FIELD:
+        ALT3Path2
+     # SUBSET LOWER BOUND:
+        1 
+     # SUBSET UPPER BOUND:
+        2 
+     # SELECTION TYPE:
+        SIMPLE
+# END SUBSET SECTION
+# BEGIN DRAW SECTION
+     # DRAW OPTION:
+        uniform drawing
+     # PALETTE NUMBER (LEFT-RIGHT/TOP-DOWN = 0-31):
+        3 
+# END DRAW SECTION
+# BEGIN REPLY
+   Yes
+# END REPLY
+     # BEGIN SUBSET SECTION
+          # SUBSET OPTION:
+             select objects map file
+          # SUBSET METHOD:
+             RANGE  
+          # SUBSET FIELD:
+             ALT3PATH1
+          # SUBSET LOWER BOUND:
+             1 
+          # SUBSET UPPER BOUND:
+             2 
+          # SELECTION TYPE:
+             SIMPLE
+     # END SUBSET SECTION
+     # BEGIN COMPUTE VARIABLE SECTION
+          # WRITE RESULTS TO:
+             MAP OBJECTS
+          # FORMULA:
+             LENGTH * 60 / ( SPEED * 1000 )
+          # FIELD NAME:
+             ALT3Cost1
+          # FIELD DECIMALS:
+             2
+          # VALUE FOR UNSELECTED RECORDS:
+             [NULL]
+     # END COMPUTE VARIABLE SECTION
+     # BEGIN COMPUTE VARIABLE SECTION
+          # WRITE RESULTS TO:
+             MAP OBJECTS
+          # FORMULA:
+             @sum ( ALT3COST1 )
+          # FIELD NAME:
+             ALT3CSUM1
+          # FIELD DECIMALS:
+             1
+          # VALUE FOR UNSELECTED RECORDS:
+             [NULL]
+     # END COMPUTE VARIABLE SECTION
+     # BEGIN SUBSET SECTION
+          # SUBSET OPTION:
+             select objects map file
+          # SUBSET METHOD:
+             RANDOM 
+          # SELECTION TYPE:
+             SUBSET
+          # NUMBER OF OBJECTS:
+             3 
+     # END SUBSET SECTION
+     # BEGIN DISPLAY LABELS SECTION
+          # DISPLAY LABELS OPTION:
+             show labels from map file
+          # VARIABLE NAME:
+             ALT3CSUM1
+          # SCREEN RESOLUTION UNIT:
+             398
+          # X-OFFSET:
+             0
+          # Y-OFFSET:
+             0
+          # RED INTENSITY (0-255):
+             128
+          # GREEN INTENSITY (0-255):
+             128
+          # BLUE INTENSITY (0-255):
+             128
+          # FONT BOLD:
+             TRUE
+          # FONT ITALIC:
+             FALSE
+          # FONT NAME:
+             MS Sans Serif
+          # FONT SIZE:
+             14
+          # FONT STRIKETHRU:
+             FALSE
+          # FONT UNDERLINE:
+             FALSE
+     # END DISPLAY LABELS SECTION
+     # BEGIN UNDO SUBSET SECTION
+          # UNDO SUBSET OPTION:
+             select objects map file
+     # END UNDO SUBSET SECTION
+# BEGIN CHANGE TEXT SECTION
+     # CHANGE TEXT OPTION:
+        Edit Map Title Text                                                                                                                                                                                                                                                 
+     # BEGIN NEW TEXT:
+        Route 22
+        
+        
+        Check shortest paths current and Alt 3  
+        
+        Correct: Yes / No
+        
+
+        Check all working in both directions 
+        
+        Correct: Yes / No
+        
+               
+        Check travel time reductions 
+        
+        Correct: Yes / No
+        
+         
+        
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+     # END NEW TEXT:
+     # FONT BOLD:
+        TRUE
+     # FONT ITALIC:
+        FALSE
+     # FONT NAME:
+        MS Sans Serif
+     # FONT SIZE:
+        14
+     # FONT STRIKETHRU:
+        FALSE
+     # FONT UNDERLINE:
+        FALSE
+# END CHANGE TEXT SECTION
+# BEGIN SAVE/PRINT JPEG SECTION
+    # WINDOW TITLE:
+      Flowmap - Professional Release "#version#"       
+    # SAVE OPTION:
+      save flowmap window
+    # SAVE MODE:
+      File
+    # SAVE IN FOLDER:
+      U:\ADVGIS\Route22\
+    # SAVE AS FILE:
+      Check33.jpg
+# END SAVE/PRINT JPEG SECTION
+# BREAK
+# BEGIN DRAW SECTION
+     # DRAW OPTION:
+        remove top legend entry
+# END DRAW SECTION
+# BEGIN DRAW SECTION
+     # DRAW OPTION:
+        remove top legend entry
+# END DRAW SECTION
+# BEGIN DRAW SECTION
+     # DRAW OPTION:
+        remove top legend entry
+# END DRAW SECTION
+# BEGIN SUBSET SECTION
+     # SUBSET OPTION:
+        select objects map file
+     # SUBSET METHOD:
+        RANGE  
+     # SUBSET FIELD:
+        ALT1PATH1
+     # SUBSET LOWER BOUND:
+        1 
+     # SUBSET UPPER BOUND:
+        2 
+     # SELECTION TYPE:
+        SIMPLE
+# END SUBSET SECTION
+# BEGIN DRAW SECTION
+     # DRAW OPTION:
+        uniform drawing
+     # PALETTE NUMBER (LEFT-RIGHT/TOP-DOWN = 0-31):
+        11 
+# END DRAW SECTION
+# BEGIN SUBSET SECTION
+     # SUBSET OPTION:
+        select objects map file
+     # SUBSET METHOD:
+        RANGE  
+     # SUBSET FIELD:
+        ALT2PATH1
+     # SUBSET LOWER BOUND:
+        1 
+     # SUBSET UPPER BOUND:
+        2 
+     # SELECTION TYPE:
+        SIMPLE
+# END SUBSET SECTION
+# BEGIN DRAW SECTION
+     # DRAW OPTION:
+        uniform drawing
+     # PALETTE NUMBER (LEFT-RIGHT/TOP-DOWN = 0-31):
+        12 
+# END DRAW SECTION
+# BEGIN SUBSET SECTION
+     # SUBSET OPTION:
+        select objects map file
+     # SUBSET METHOD:
+        RANGE  
+     # SUBSET FIELD:
+        ALT3PATH1
+     # SUBSET LOWER BOUND:
+        1 
+     # SUBSET UPPER BOUND:
+        2 
+     # SELECTION TYPE:
+        SIMPLE
+# END SUBSET SECTION
+# BEGIN DRAW SECTION
+     # DRAW OPTION:
+        uniform drawing
+     # PALETTE NUMBER (LEFT-RIGHT/TOP-DOWN = 0-31):
+        13 
+# END DRAW SECTION
+# BEGIN CHANGE TEXT SECTION
+     # CHANGE TEXT OPTION:
+        Edit Map Title Text                                                                                                                                                                                                                                                 
+     # BEGIN NEW TEXT:
+        Route 22
+        
+        
+        Check 4 different shortest paths 
+        
+        Correct: Yes / No
+               
+         
+        
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+     # END NEW TEXT:
+     # FONT BOLD:
+        TRUE
+     # FONT ITALIC:
+        FALSE
+     # FONT NAME:
+        MS Sans Serif
+     # FONT SIZE:
+        14
+     # FONT STRIKETHRU:
+        FALSE
+     # FONT UNDERLINE:
+        FALSE
+# END CHANGE TEXT SECTION
+# BEGIN SAVE/PRINT JPEG SECTION
+     # WINDOW TITLE:
+        Flowmap - Professional Release "#version#"       
+     # SAVE OPTION:
+        save flowmap window
+     # SAVE MODE:
+        File
+     # SAVE IN FOLDER:
+        U:\ADVGIS\Route22\
+     # SAVE AS FILE:
+        check34.jpg
+# END SAVE/PRINT JPEG SECTION
+# BREAK
+# BEGIN DRAW SECTION
+     # DRAW OPTION:
+        remove top legend entry
+# END DRAW SECTION
+# BEGIN DRAW SECTION
+     # DRAW OPTION:
+        remove top legend entry
+# END DRAW SECTION
+# BEGIN DRAW SECTION
+     # DRAW OPTION:
+        remove top legend entry
+# END DRAW SECTION
+# BEGIN DRAW SECTION
+     # DRAW OPTION:
+        remove top legend entry
+# END DRAW SECTION
+# BEGIN DRAW SECTION
+     # DRAW OPTION:
+        remove top legend entry
+# END DRAW SECTION
+# BEGIN CHANGE TEXT SECTION
+     # CHANGE TEXT OPTION:
+        Edit Map Title Text                                                                                                                                                                                                                                                 
+     # BEGIN NEW TEXT:
+        Route 22
+        
+        
+        Check unique labels 
+        
+        Correct: Yes / No
+               
+         
+        
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+     # END NEW TEXT:
+     # FONT BOLD:
+        TRUE
+     # FONT ITALIC:
+        FALSE
+     # FONT NAME:
+        MS Sans Serif
+     # FONT SIZE:
+        14
+     # FONT STRIKETHRU:
+        FALSE
+     # FONT UNDERLINE:
+        FALSE
+# END CHANGE TEXT SECTION
+# BEGIN COMPUTE VARIABLE SECTION
+     # WRITE RESULTS TO:
+        TABLE
+     # TABLE NAME:
+        U:\ADVGIS\Route22\ROADs223.DBF
+     # FORMULA:
+        @min ( LABEL )
+     # FIELD NAME:
+        MinLabel
+     # FIELD DECIMALS:
+        2
+     # BEGIN MESSAGE
+        Writing of field(s) MINLABEL completed successfully
+     # END MESSAGE
+# END COMPUTE VARIABLE SECTION
+# MENU BUTTON: file
+   # MENU BUTTON: calculate field
+# BEGIN COMPUTE VARIABLE SECTION
+     # WRITE RESULTS TO:
+        TABLE
+     # TABLE NAME:
+        U:\ADVGIS\Route22\ROADs223.DBF
+     # FORMULA:
+        @max (LABEL )
+     # FIELD NAME:
+        MAXLABEL
+     # FIELD DECIMALS:
+        0
+     # BEGIN MESSAGE
+        Writing of field(s) MAXLABEL completed successfully
+     # END MESSAGE
+# END COMPUTE VARIABLE SECTION
+# MENU BUTTON: subset
+# MENU BUTTON: file
+   # MENU BUTTON: calculate field
+# BEGIN COMPUTE VARIABLE SECTION
+     # WRITE RESULTS TO:
+        TABLE
+     # TABLE NAME:
+        U:\ADVGIS\Route22\ROADs223.DBF
+     # FORMULA:
+        MAXLABEL - MINLABEL + 1
+     # FIELD NAME:
+        DIFFLABEL
+     # FIELD DECIMALS:
+        0
+# END COMPUTE VARIABLE SECTION
+# BEGIN SUBSET SECTION
+     # SUBSET OPTION:
+        select objects map file
+     # SUBSET METHOD:
+        RANGE  
+     # SUBSET FIELD:
+        ALT1PATH1
+     # SUBSET LOWER BOUND:
+        1 
+     # SUBSET UPPER BOUND:
+        2 
+     # SELECTION TYPE:
+        SIMPLE
+# END SUBSET SECTION
+# BEGIN DISPLAY LABELS SECTION
+     # DISPLAY LABELS OPTION:
+        show labels from map file
+     # VARIABLE NAME:
+        MINLABEL
+     # SCREEN RESOLUTION UNIT:
+        398
+     # X-OFFSET:
+        0
+     # Y-OFFSET:
+        2
+     # RED INTENSITY (0-255):
+        128
+     # GREEN INTENSITY (0-255):
+        7
+     # BLUE INTENSITY (0-255):
+        128
+     # FONT BOLD:
+        TRUE
+     # FONT ITALIC:
+        FALSE
+     # FONT NAME:
+        MS Sans Serif
+     # FONT SIZE:
+        12
+     # FONT STRIKETHRU:
+        FALSE
+     # FONT UNDERLINE:
+        FALSE
+# END DISPLAY LABELS SECTION
+# MENU BUTTON: subset
+   # MENU BUTTON: select objects map file
+# BEGIN UNDO SUBSET SECTION
+     # UNDO SUBSET OPTION:
+        select objects map file
+     # BEGIN MESSAGE
+        Selection undone successfully; All lines reactivated!
+     # END MESSAGE
+# END UNDO SUBSET SECTION
+# BEGIN SUBSET SECTION
+     # SUBSET OPTION:
+        select objects map file
+     # SUBSET METHOD:
+        MAXIMUM
+     # SUBSET FIELD:
+        ALT3PATH2
+     # SUBSET LOWER BOUND:
+        2 
+     # SUBSET UPPER BOUND:
+        2 
+     # SELECTION TYPE:
+        SIMPLE
+     # BEGIN MESSAGE
+        Maximum found: 2
+        3 map objects selected
+        Label: 53510/53512/53517
+     # END MESSAGE
+# END SUBSET SECTION
+# MENU BUTTON: maps
+   # MENU BUTTON: show labels from map file
+# BEGIN DISPLAY LABELS SECTION
+     # DISPLAY LABELS OPTION:
+        show labels from map file
+     # VARIABLE NAME:
+        MAXLABEL
+     # SCREEN RESOLUTION UNIT:
+        398
+     # X-OFFSET:
+        0
+     # Y-OFFSET:
+        2
+     # RED INTENSITY (0-255):
+        128
+     # GREEN INTENSITY (0-255):
+        7
+     # BLUE INTENSITY (0-255):
+        128
+     # FONT BOLD:
+        TRUE
+     # FONT ITALIC:
+        FALSE
+     # FONT NAME:
+        MS Sans Serif
+     # FONT SIZE:
+        12
+     # FONT STRIKETHRU:
+        FALSE
+     # FONT UNDERLINE:
+        FALSE
+# END DISPLAY LABELS SECTION
+# BEGIN UNDO SUBSET SECTION
+     # UNDO SUBSET OPTION:
+        select objects map file
+     # BEGIN MESSAGE
+        Selection undone successfully; All lines reactivated!
+     # END MESSAGE
+# END UNDO SUBSET SECTION
+# BEGIN SUBSET SECTION
+     # SUBSET OPTION:
+        select objects map file
+     # SUBSET METHOD:
+        MAXIMUM
+     # SUBSET FIELD:
+        ALT2PATH1
+     # SUBSET LOWER BOUND:
+        2 
+     # SUBSET UPPER BOUND:
+        2 
+     # SELECTION TYPE:
+        SIMPLE
+     # BEGIN MESSAGE
+        Maximum found: 2
+        3 map objects selected
+        Label: 53511/53514/53519
+     # END MESSAGE
+# END SUBSET SECTION
+# BEGIN DISPLAY LABELS SECTION
+     # DISPLAY LABELS OPTION:
+        show labels from map file
+     # VARIABLE NAME:
+        DIFFLABEL
+     # SCREEN RESOLUTION UNIT:
+        398
+     # X-OFFSET:
+        0
+     # Y-OFFSET:
+        2
+     # RED INTENSITY (0-255):
+        128
+     # GREEN INTENSITY (0-255):
+        7
+     # BLUE INTENSITY (0-255):
+        128
+     # FONT BOLD:
+        TRUE
+     # FONT ITALIC:
+        FALSE
+     # FONT NAME:
+        MS Sans Serif
+     # FONT SIZE:
+        12
+     # FONT STRIKETHRU:
+        FALSE
+     # FONT UNDERLINE:
+        FALSE
+# END DISPLAY LABELS SECTION
+# BEGIN SAVE/PRINT JPEG SECTION
+          # WINDOW TITLE:
+             Flowmap - Professional Release "#version#"       
+          # SAVE OPTION:
+             save flowmap window
+          # SAVE MODE:
+             File
+          # SAVE IN FOLDER:
+             U:\ADVGIS\Route22\
+          # SAVE AS FILE:
+             Check35.jpg
+     # END SAVE/PRINT JPEG SECTION
+# MENU BUTTON: options
+   # MENU BUTTON: mode of operation
+      # MENU BUTTON: interactive
