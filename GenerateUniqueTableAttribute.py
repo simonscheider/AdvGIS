@@ -29,7 +29,7 @@ def updateTableC(table, field):
 #updateTableC()
 
 
-table = 'Roads16'
+table = 'Roads17NEW'
 field = 'BN2000_'
 print "Test: is the field unique? "+str(checkUniquness(table, field))
 #updateTableC(table, field)
