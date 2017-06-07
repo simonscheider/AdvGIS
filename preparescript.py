@@ -1,8 +1,8 @@
 #-------------------------------------------------------------------------------
-# Name:        module1
-# Purpose:
+# Name:        preparescript
+# Purpose:  Test the correctness of roadfiles for the course Advanced GIS (U Utrecht)
 #
-# Author:      simon
+# Author:      simon scheider
 #
 # Created:     30/05/2016
 # Copyright:   (c) simon 2016
@@ -207,22 +207,22 @@ class dataf():
                     line = line.replace('TIME_BACK',self.TTCurrentBack)
                     line = line.replace('Dokkum02',self.exit1)
                     line = line.replace('Nyega',self.exit2)
-                    if (line.find('NAT_FORTH')!=-1):
-                        line = line.replace('NAT_FORTH',self.TTAltForth[0])
-                    if (line.find('NAT_BACK')!=-1):
-                        line= line.replace('NAT_BACK',self.TTAltBack[0])
+                    if (line.find('NNN_FORTH')!=-1):
+                        line = line.replace('NNN_FORTH',self.TTAltForth[0])
+                    if (line.find('NNN_BACK')!=-1):
+                        line= line.replace('NNN_BACK',self.TTAltBack[0])
                     if (line.find('MONU_FORTH')!=-1):
                         line = line.replace('MONU_FORTH',self.TTAltForth[1])
                     if (line.find('MONU_BACK')!=-1):
                         line= line.replace('MONU_BACK',self.TTAltBack[1])
-                    if (line.find('TOUR_FORTH')!=-1):
-                        line = line.replace('TOUR_FORTH',self.TTAltForth[2])
-                    if (line.find('TOUR_BACK')!=-1):
-                        line= line.replace('TOUR_BACK',self.TTAltBack[2])
-                    if (line.find('TOUR2_FORTH')!=-1):
-                        line = line.replace('TOUR2_FORTH',self.TTAltForth[3])
-                    if (line.find('TOUR2_BACK')!=-1):
-                        line= line.replace('TOUR2_BACK',self.TTAltBack[3])
+                    if (line.find('TTT_FORTH')!=-1):
+                        line = line.replace('TTT_FORTH',self.TTAltForth[2])
+                    if (line.find('TTT_BACK')!=-1):
+                        line= line.replace('TTT_BACK',self.TTAltBack[2])
+                    if (line.find('TTT2_FORTH')!=-1):
+                        line = line.replace('TTT2_FORTH',self.TTAltForth[3])
+                    if (line.find('TTT2_BACK')!=-1):
+                        line= line.replace('TTT2_BACK',self.TTAltBack[3])
                 f2.write(line)
 
             if ( script =="MOT_C1.flg" ):
@@ -276,7 +276,7 @@ def main():
 ##    xls_to_csv(workbook="C:\AdvGIS\Group03\MoT03V2.xls")
 ##    d = dataf(spath='C:\AdvGIS\Group03', file='MoT03V2.csv', exit1 = "DOKKUM01", exit2= "DRONRYP02")
 ##    xls_to_csv(workbook="C:\AdvGIS\Group07\MOT07.xls")
-##    d = dataf(spath='C:\AdvGIS\Group07', file='MOT07.csv', exit1 = "...", exit2= "...")
+##    d = dataf(spath='C:\AdvGIS\Group07', file='MOT07.csv', exit1 = "Exit1", exit2= "Exit2")
 ##    xls_to_csv(workbook="C:\AdvGIS\Group9\MOT09.xls")
 ##    d = dataf(spath='C:\AdvGIS\Group9', file='MOT09.csv', exit1 = "DOKKUM02", exit2= "OPEINDE02")
 ##    xls_to_csv(workbook="C:\AdvGIS\Group13\MOT13.xls")
@@ -295,12 +295,12 @@ def main():
 ##    d = dataf(spath='C:\AdvGIS\Group04', file='MOT04.csv', exit1 = "End", exit2= "Begin")
 ##    xls_to_csv(workbook="C:\AdvGIS\Group14\MoT_file.xlsx")
 ##    d = dataf(spath='C:\AdvGIS\Group14', file='MoT_file.csv', exit1 = "BEILEN01", exit2= "STEENWIJK01")
-    xls_to_csv(workbook="C:\AdvGIS\Group16\MOT16.xls")
-    d = dataf(spath='C:\AdvGIS\Group16', file='MOT16.csv', exit1 = "HAVELTERBERG", exit2= "SPIER")
+##    xls_to_csv(workbook="C:\AdvGIS\Group16\MOT16.xls")
+##    d = dataf(spath='C:\AdvGIS\Group16', file='MOT16.csv', exit1 = "HAVELTERBERG", exit2= "SPIER")
 ##    xls_to_csv(workbook="C:\AdvGIS\Group17\MOT17.xls")
 ##    d = dataf(spath='C:\AdvGIS\Group17', file='MOT17.csv', exit1 = "HAVELTERBERG", exit2= "PESSE01")
-##    xls_to_csv(workbook="P:\AdvGIS\Group11\MOT11.xls")
-##    d = dataf(spath='P:\AdvGIS\Group11', file='MOT11.csv', exit1 = "ENDDOKKUM", exit2= "ENDNIEBERT")
+##    xls_to_csv(workbook="C:\AdvGIS\Group11\MOT11.xls")
+##    d = dataf(spath='C:\AdvGIS\Group11', file='MOT11.csv', exit1 = "ENDDOKKUM", exit2= "ENDNIEBERT")
 ##    xls_to_csv(workbook="C:\AdvGIS\Group12\MOT12.xls")
 ##    d = dataf(spath='C:\AdvGIS\Group12', file='MOT12.csv', exit1 = "WOLVEGA", exit2= "ASSEN")
 

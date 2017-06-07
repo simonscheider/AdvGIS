@@ -462,9 +462,9 @@
      # NAME ATTRIBUTE FILE:
         U:\ADVGIS\Route22\ROADS223.DBF                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
      # FIELD NAME IMPEDANCE (OUT) ATTRIBUTE:
-        NAT_FORTH
+        NNN_FORTH
      # FIELD NAME IMPEDANCE (HOME) ATTRIBUTE:
-        NAT_BACK 
+        NNN_BACK 
      # CONNECT METHOD:
         NODES
      # FIELD NAME ACCESS ATTRIBUTE:
@@ -526,9 +526,9 @@
      # NAME ATTRIBUTE FILE:
         U:\ADVGIS\Route22\ROADS223.DBF                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
      # FIELD NAME IMPEDANCE (OUT) ATTRIBUTE:
-        NAT_FORTH
+        NNN_FORTH
      # FIELD NAME IMPEDANCE (HOME) ATTRIBUTE:
-        NAT_BACK 
+        NNN_BACK 
      # CONNECT METHOD:
         NODES
      # FIELD NAME ACCESS ATTRIBUTE:
@@ -1024,9 +1024,9 @@
      # NAME ATTRIBUTE FILE:
         U:\ADVGIS\Route22\ROADS223.DBF                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
      # FIELD NAME IMPEDANCE (OUT) ATTRIBUTE:
-        TOUR_FORTH
+        TTT_FORTH
      # FIELD NAME IMPEDANCE (HOME) ATTRIBUTE:
-        TOUR_BACK 
+        TTT_BACK 
      # CONNECT METHOD:
         NODES
      # FIELD NAME ACCESS ATTRIBUTE:
@@ -1064,9 +1064,9 @@
      # NAME ATTRIBUTE FILE:
         U:\ADVGIS\Route22\ROADS223.DBF                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
      # FIELD NAME IMPEDANCE (OUT) ATTRIBUTE:
-        TOUR_FORTH
+        TTT_FORTH
      # FIELD NAME IMPEDANCE (HOME) ATTRIBUTE:
-        TOUR_BACK 
+        TTT_BACK 
      # CONNECT METHOD:
         NODES
      # FIELD NAME ACCESS ATTRIBUTE:
@@ -1276,9 +1276,9 @@
      # NAME ATTRIBUTE FILE:
         U:\ADVGIS\Route22\ROADS223.DBF                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
      # FIELD NAME IMPEDANCE (OUT) ATTRIBUTE:
-        TOUR2_FORTH
+        TTT2_FORTH
      # FIELD NAME IMPEDANCE (HOME) ATTRIBUTE:
-        TOUR2_BACK 
+        TTT2_BACK 
      # CONNECT METHOD:
         NODES
      # FIELD NAME ACCESS ATTRIBUTE:
@@ -1316,9 +1316,9 @@
      # NAME ATTRIBUTE FILE:
         U:\ADVGIS\Route22\ROADS223.DBF                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
      # FIELD NAME IMPEDANCE (OUT) ATTRIBUTE:
-        TOUR2_FORTH
+        TTT2_FORTH
      # FIELD NAME IMPEDANCE (HOME) ATTRIBUTE:
-        TOUR2_BACK 
+        TTT2_BACK 
      # CONNECT METHOD:
         NODES
      # FIELD NAME ACCESS ATTRIBUTE:
