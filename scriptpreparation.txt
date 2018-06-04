@@ -10,4 +10,3 @@ Advice to students:
 
 - Dont put files on the U drive, Flowmap cannot read them
 
-- 
