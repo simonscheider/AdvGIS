@@ -269,8 +269,8 @@ def xls_to_csv(workbook= 'data.xls'):
     csvfile.close()
 
 def main():
-    xls_to_csv(workbook="P:\AdvGIS\Group10\MOT10def_2.xlsx")
-    d = dataf(spath='P:\AdvGIS\Group10', file='MOT10def_2.csv', exit1 = "DOKKUM02", exit2= "MARUM02")
+    xls_to_csv(workbook="P:\AdvGIS\Group10\MOT10def_5.xlsx")
+    d = dataf(spath='P:\AdvGIS\Group10', file='MOT10def_5.csv', exit1 = "DOKKUM02", exit2= "MARUM02")
 ##    xls_to_csv(workbook="P:\AdvGIS\Group19\MOTxx.xls")
 ##    d = dataf(spath='P:\AdvGIS\Group19', file='MOTxx.csv', exit1 = "Dokkumexit", exit2= "GroningenExit")
 ##    xls_to_csv(workbook="P:\AdvGIS\Group03\MoT03.xls")
@@ -295,8 +295,8 @@ def main():
 ##    d = dataf(spath='C:\AdvGIS\Group04', file='MOT04.csv', exit1 = "End", exit2= "Begin")
 ##    xls_to_csv(workbook="C:\AdvGIS\Group14\MoT_file.xlsx")
 ##    d = dataf(spath='C:\AdvGIS\Group14', file='MoT_file.csv', exit1 = "BEILEN01", exit2= "STEENWIJK01")
-    xls_to_csv(workbook="C:\AdvGIS\Group16\MOT16.xls")
-    d = dataf(spath='C:\AdvGIS\Group16', file='MOT16.csv', exit1 = "HAVELTERBERG", exit2= "SPIER")
+##    xls_to_csv(workbook="C:\AdvGIS\Group16\MOT16.xls")
+##    d = dataf(spath='C:\AdvGIS\Group16', file='MOT16.csv', exit1 = "HAVELTERBERG", exit2= "SPIER")
 ##    xls_to_csv(workbook="P:\AdvGIS\Group17\MOT17.xls")
 ##    d = dataf(spath='C:\AdvGIS\Group17', file='MOT17.csv', exit1 = "HAVELTERBERG", exit2= "PESSE01")
 ##    xls_to_csv(workbook="C:\AdvGIS\Group11\MOT11.xls")
