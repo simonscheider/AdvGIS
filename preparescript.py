@@ -269,8 +269,8 @@ def xls_to_csv(workbook= 'data.xls'):
     csvfile.close()
 
 def main():
-    xls_to_csv(workbook="P:\AdvGIS\Group10\MOT10def_5.xlsx")
-    d = dataf(spath='P:\AdvGIS\Group10', file='MOT10def_5.csv', exit1 = "DOKKUM02", exit2= "MARUM02")
+    xls_to_csv(workbook="C:\Users\schei008\surfdrive\Temp\AdvancedGIS\MOT19\Group17\MOT17.xls")
+    d = dataf(spath='C:\Users\schei008\surfdrive\Temp\AdvancedGIS\MOT19\Group17', file='MOT17.csv', exit1 = "HAVELTERBERG", exit2= "PESSE01")
 ##    xls_to_csv(workbook="P:\AdvGIS\Group19\MOTxx.xls")
 ##    d = dataf(spath='P:\AdvGIS\Group19', file='MOTxx.csv', exit1 = "Dokkumexit", exit2= "GroningenExit")
 ##    xls_to_csv(workbook="P:\AdvGIS\Group03\MoT03.xls")
