@@ -227,7 +227,7 @@ class dataf():
 
             if ( script =="MOT_C1.flg" ):
                 if "11YY" in line:
-                    line= line.replace("11YY",str(self.numfields))
+                    line= line.replace("11YY",str(int(self.numfields)))
                 #filedata = filedata.replace("11YY",str(self.numfields))
                 if  "# END COPY FIELDS SECTION" in line:
                     delete = False
@@ -269,10 +269,42 @@ def xls_to_csv(workbook= 'data.xls'):
     csvfile.close()
 
 def main():
-    xls_to_csv(workbook="C:\Users\schei008\surfdrive\Temp\AdvancedGIS\MOT19\Group17\MOT17.xls")
-    d = dataf(spath='C:\Users\schei008\surfdrive\Temp\AdvancedGIS\MOT19\Group17', file='MOT17.csv', exit1 = "HAVELTERBERG", exit2= "PESSE01")
-##    xls_to_csv(workbook="P:\AdvGIS\Group19\MOTxx.xls")
-##    d = dataf(spath='P:\AdvGIS\Group19', file='MOTxx.csv', exit1 = "Dokkumexit", exit2= "GroningenExit")
+    xls_to_csv(workbook="C:\AdvGIS\Group19\MOT19.xls")
+    d = dataf(spath='C:\AdvGIS\Group19', file='MOT19.csv', exit1 = "DOK_2", exit2= "GRN_1")
+##    xls_to_csv(workbook="P:\AdvGIS\Group20\MOT20.xls")
+##    d = dataf(spath='P:\AdvGIS\Group20', file='MOT20.csv', exit1 = "RHEE01", exit2= "NIEBERt02")
+##    xls_to_csv(workbook="P:\AdvGIS\Group05\MOT05.xls")
+##    d = dataf(spath='P:\AdvGIS\Group05', file='MOT05.csv', exit1 = "HIGHWAY_EXIT_REDUZUM01", exit2= "HIGHWAY_EXIT_NYEGA02")
+##    xls_to_csv(workbook="P:\AdvGIS\Group06\MOT06.xls")
+##    d = dataf(spath='P:\AdvGIS\Group06', file='MOT06.csv', exit1 = "TUK", exit2= "BANT02")
+##    xls_to_csv(workbook="C:\AdvGIS\Group12\MOT12.xls")
+##    d = dataf(spath='C:\AdvGIS\Group12', file='MOT12.csv', exit1 = "ASSEN", exit2= "WOLVEGA")
+##    xls_to_csv(workbook="C:\AdvGIS\Group02\MOT02.xls")
+##    d = dataf(spath='C:\AdvGIS\Group02', file='MOT02.csv', exit1 = "DOKKUM01", exit2= "DONGJUM02")
+##    xls_to_csv(workbook="P:\AdvGIS\Group8\MOT08.xls")
+##    d = dataf(spath='P:\AdvGIS\Group08', file='MOT08.csv', exit1 = "????", exit2= "???")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+##    xls_to_csv(workbook="C:\Users\schei008\surfdrive\Temp\AdvancedGIS\MOT19\Group17\MOT17.xls")
+##    d = dataf(spath='C:\Users\schei008\surfdrive\Temp\AdvancedGIS\MOT19\Group17', file='MOT17.csv', exit1 = "HAVELTERBERG", exit2= "PESSE01")
+##    xls_to_csv(workbook="C:\AdvGIS\MOT19\Group19\MOT19.xls")
+##    d = dataf(spath='C:\AdvGIS\MOT19\Group19', file='MOT19.csv', exit1 = "DOK_2", exit2= "GRN_1")
+
+
+
 ##    xls_to_csv(workbook="P:\AdvGIS\Group03\MoT03.xls")
 ##    d = dataf(spath='P:\AdvGIS\Group03', file='MoT03.csv', exit1 = "DOKKUM01", exit2= "DRONRYP02")
 ##    xls_to_csv(workbook="C:\AdvGIS\Group07\MOT07.xls")

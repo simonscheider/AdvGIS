@@ -325,7 +325,7 @@
 # BREAK
 # BEGIN SAVE/PRINT JPEG SECTION
           # WINDOW TITLE:
-             Flowmap - Professional Release #version#       
+             Flowmap - Professional Release "#version#"       
           # SAVE OPTION:
              save flowmap window
           # SAVE MODE:
@@ -523,7 +523,7 @@
 # END CHANGE TEXT SECTION
 # BEGIN SAVE/PRINT JPEG SECTION
           # WINDOW TITLE:
-             Flowmap - Professional Release #version#       
+             Flowmap - Professional Release "#version#"       
           # SAVE OPTION:
              save flowmap window
           # SAVE MODE:
