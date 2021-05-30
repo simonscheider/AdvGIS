@@ -61,57 +61,57 @@ class dataf():
         with open(self.descpath) as csvfile:
             reader = csv.reader(csvfile, delimiter=',')
             for row in reader:
-                print row
+                print(row)
                 if row[0].lower().find('Input Data Folder'.lower())!=-1:
                     self.grp =(row[1])[-2:]
-                    print self.grp
+                    print(self.grp)
                 if row[0].lower().find('Name Shape File containing BeginPoint, EndPoint and all MidPoints'.lower())!=-1:
                     self.pointfile = row[1]
-                    print self.pointfile
+                    print(self.pointfile)
                 elif row[0].lower().find('Fieldname Unique Identifier in Points shape file'.lower())!=-1:
                     self.exitnamefield =row[1]
-                    print self.exitnamefield
+                    print(self.exitnamefield)
                 elif row[0].lower().find('Name Shape File containing integrated roadnetwork'.lower())!=-1:
                     self.roadfile = row[1]
-                    print self.roadfile
+                    print(self.roadfile)
                 elif row[0].lower().find('Fieldname Unique Identifier in integrated road shape file'.lower())!=-1:
                     self.roadfield = row[1]
-                    print self.roadfield
+                    print(self.roadfield)
                 elif row[0].lower().find('Number of alternative routes (incl straight line)'.lower())!=-1:
                     if (row[1].find('.')==-1):
                         self.numalt = int(row[1])
                     else:
                         self.numalt = float(row[1])
                     self.numfields = 5+(self.numalt*2)
-                    print str(self.numalt) +' '+str(self.numfields)
+                    print(str(self.numalt) +' '+str(self.numfields))
                 elif row[0].lower().find('Reference Name of alternative'.lower())!=-1:
                     self.alternativenames[(row[0])[((row[0].find("alternative "))+12)]] = row[1]
-                    print str(self.alternativenames)
+                    print(str(self.alternativenames))
                 elif row[0].lower().find('Travel speed by car in kmph for all roads'.lower())!=-1:
                     self.speed = self.dequote(row[1])
-                    print self.dequote(row[1])
+                    print(self.dequote(row[1]))
                 elif row[0].lower().find('Midway access to all road segments'.lower())!=-1:
                     self.access = self.dequote(row[1])
-                    print self.dequote(row[1])
+                    print(self.dequote(row[1]))
                 elif row[0].lower().find('Reference name current or alternative road'.lower())!=-1:
                     self.routenamefield = self.dequote(row[1])
-                    print self.dequote(row[1])
+                    print(self.dequote(row[1]))
                 elif row[0].lower().find('Travel time Forth in current situation only'.lower())!=-1:
                     self.TTCurrentForth = self.dequote(row[1])
-                    print self.dequote(row[1])
+                    print(self.dequote(row[1]))
                 elif row[0].lower().find('Travel time Back in current situation only'.lower())!=-1:
                     self.TTCurrentBack = self.dequote(row[1])
-                    print self.dequote(row[1])
+                    print(self.dequote(row[1]))
                 elif row[0].lower().find('Travel time Forth'.lower())!=-1:
                     self.TTAltForth.append(self.dequote(row[1]))
-                    print self.dequote(row[1])
+                    print(self.dequote(row[1]))
                 elif row[0].lower().find('Travel time Back'.lower())!=-1:
                     self.TTAltBack.append(self.dequote(row[1]))
-                    print self.dequote(row[1])
-        print "Alternative fieldnames: "
-        print self.TTAltForth
-        print self.TTAltBack
-        print "number of alternatives: "+str(self.numalt)
+                    print(self.dequote(row[1]))
+        print("Alternative fieldnames: ")
+        print(self.TTAltForth)
+        print(self.TTAltBack)
+        print("number of alternatives: "+str(self.numalt))
         try:
             if self.numalt >4 or self.numalt <3:
                 raise ValueError("Too many or few alternatives!!")
@@ -144,12 +144,12 @@ class dataf():
         filedata = filedata.replace("XX",self.grp)
         #filedata = filedata.replace("11YY",str(self.numfields))
 
-        import StringIO
-        filedata = StringIO.StringIO(filedata)
+        import io
+        filedata = io.StringIO(filedata)
 
         #write to new script file at path location
         self.scriptpath= os.path.normpath(os.path.join(self.path,script))
-        print "Write script: "+str(self.scriptpath)
+        print("Write script: "+str(self.scriptpath))
         f2=open(self.scriptpath,'w')
         delete = False
         det = False
@@ -264,7 +264,7 @@ def xls_to_csv(workbook= 'data.xls'):
     csvfile = open(os.path.splitext(workbook)[0]+'.csv', 'wb')
     writecsv = csv.writer(csvfile, quoting=csv.QUOTE_MINIMAL)
 
-    for rownum in xrange(x1.nrows):
+    for rownum in range(x1.nrows):
         writecsv.writerow(x1.row_values(rownum))
     csvfile.close()
 
@@ -309,8 +309,8 @@ def main():
 ##    d = dataf(spath='C:\AdvGIS\Group16', file='MOT16.csv', exit1 = "DOKKUM02", exit2= "OPEINDE02")
 ##    xls_to_csv(workbook="C:\AdvGIS\Group04\MOT04.xls")
 ##    d = dataf(spath='C:\AdvGIS\Group04', file='MOT04.csv', exit1 = "LOENGA", exit2= "DRONRY")
-    xls_to_csv(workbook="C:\AdvGIS\Group24\MOT_24.xlsx")
-    d = dataf(spath='C:\AdvGIS\Group24', file='MOT_24.csv', exit1 = "Exit_1", exit2= "Exit_2")
+    # xls_to_csv(workbook="C:\AdvGIS\Group24\MOT_24.xlsx")
+    # d = dataf(spath='C:\AdvGIS\Group24', file='MOT_24.csv', exit1 = "Exit_1", exit2= "Exit_2")
 ##    xls_to_csv(workbook="C:\AdvGIS\Group25\MOT25.xls")
 ##    d = dataf(spath='C:\AdvGIS\Group25', file='MOT25.csv', exit1 = "NIEBERT02", exit2= "RHEE01")
 ##    xls_to_csv(workbook="C:\AdvGIS\Group22\MOT22.xlsx")
