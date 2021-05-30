@@ -62,52 +62,53 @@ class dataf():
             reader = csv.reader(csvfile, delimiter=',')
             for row in reader:
                 print(row)
-                if row[0].lower().find('Input Data Folder'.lower())!=-1:
-                    self.grp =(row[1])[-2:]
-                    print(self.grp)
-                if row[0].lower().find('Name Shape File containing BeginPoint, EndPoint and all MidPoints'.lower())!=-1:
-                    self.pointfile = row[1]
-                    print(self.pointfile)
-                elif row[0].lower().find('Fieldname Unique Identifier in Points shape file'.lower())!=-1:
-                    self.exitnamefield =row[1]
-                    print(self.exitnamefield)
-                elif row[0].lower().find('Name Shape File containing integrated roadnetwork'.lower())!=-1:
-                    self.roadfile = row[1]
-                    print(self.roadfile)
-                elif row[0].lower().find('Fieldname Unique Identifier in integrated road shape file'.lower())!=-1:
-                    self.roadfield = row[1]
-                    print(self.roadfield)
-                elif row[0].lower().find('Number of alternative routes (incl straight line)'.lower())!=-1:
-                    if (row[1].find('.')==-1):
-                        self.numalt = int(row[1])
-                    else:
-                        self.numalt = float(row[1])
-                    self.numfields = 5+(self.numalt*2)
-                    print(str(self.numalt) +' '+str(self.numfields))
-                elif row[0].lower().find('Reference Name of alternative'.lower())!=-1:
-                    self.alternativenames[(row[0])[((row[0].find("alternative "))+12)]] = row[1]
-                    print(str(self.alternativenames))
-                elif row[0].lower().find('Travel speed by car in kmph for all roads'.lower())!=-1:
-                    self.speed = self.dequote(row[1])
-                    print(self.dequote(row[1]))
-                elif row[0].lower().find('Midway access to all road segments'.lower())!=-1:
-                    self.access = self.dequote(row[1])
-                    print(self.dequote(row[1]))
-                elif row[0].lower().find('Reference name current or alternative road'.lower())!=-1:
-                    self.routenamefield = self.dequote(row[1])
-                    print(self.dequote(row[1]))
-                elif row[0].lower().find('Travel time Forth in current situation only'.lower())!=-1:
-                    self.TTCurrentForth = self.dequote(row[1])
-                    print(self.dequote(row[1]))
-                elif row[0].lower().find('Travel time Back in current situation only'.lower())!=-1:
-                    self.TTCurrentBack = self.dequote(row[1])
-                    print(self.dequote(row[1]))
-                elif row[0].lower().find('Travel time Forth'.lower())!=-1:
-                    self.TTAltForth.append(self.dequote(row[1]))
-                    print(self.dequote(row[1]))
-                elif row[0].lower().find('Travel time Back'.lower())!=-1:
-                    self.TTAltBack.append(self.dequote(row[1]))
-                    print(self.dequote(row[1]))
+                if row != []:
+                    if row[0].lower().find('Input Data Folder'.lower())!=-1:
+                        self.grp =(row[1])[-2:]
+                        print(self.grp)
+                    if row[0].lower().find('Name Shape File containing BeginPoint, EndPoint and all MidPoints'.lower())!=-1:
+                        self.pointfile = row[1]
+                        print(self.pointfile)
+                    elif row[0].lower().find('Fieldname Unique Identifier in Points shape file'.lower())!=-1:
+                        self.exitnamefield =row[1]
+                        print(self.exitnamefield)
+                    elif row[0].lower().find('Name Shape File containing integrated roadnetwork'.lower())!=-1:
+                        self.roadfile = row[1]
+                        print(self.roadfile)
+                    elif row[0].lower().find('Fieldname Unique Identifier in integrated road shape file'.lower())!=-1:
+                        self.roadfield = row[1]
+                        print(self.roadfield)
+                    elif row[0].lower().find('Number of alternative routes (incl straight line)'.lower())!=-1:
+                        if (row[1].find('.')==-1):
+                            self.numalt = int(row[1])
+                        else:
+                            self.numalt = float(row[1])
+                        self.numfields = 5+(self.numalt*2)
+                        print(str(self.numalt) +' '+str(self.numfields))
+                    elif row[0].lower().find('Reference Name of alternative'.lower())!=-1:
+                        self.alternativenames[(row[0])[((row[0].find("alternative "))+12)]] = row[1]
+                        print(str(self.alternativenames))
+                    elif row[0].lower().find('Travel speed by car in kmph for all roads'.lower())!=-1:
+                        self.speed = self.dequote(row[1])
+                        print(self.dequote(row[1]))
+                    elif row[0].lower().find('Midway access to all road segments'.lower())!=-1:
+                        self.access = self.dequote(row[1])
+                        print(self.dequote(row[1]))
+                    elif row[0].lower().find('Reference name current or alternative road'.lower())!=-1:
+                        self.routenamefield = self.dequote(row[1])
+                        print(self.dequote(row[1]))
+                    elif row[0].lower().find('Travel time Forth in current situation only'.lower())!=-1:
+                        self.TTCurrentForth = self.dequote(row[1])
+                        print(self.dequote(row[1]))
+                    elif row[0].lower().find('Travel time Back in current situation only'.lower())!=-1:
+                        self.TTCurrentBack = self.dequote(row[1])
+                        print(self.dequote(row[1]))
+                    elif row[0].lower().find('Travel time Forth'.lower())!=-1:
+                        self.TTAltForth.append(self.dequote(row[1]))
+                        print(self.dequote(row[1]))
+                    elif row[0].lower().find('Travel time Back'.lower())!=-1:
+                        self.TTAltBack.append(self.dequote(row[1]))
+                        print(self.dequote(row[1]))
         print("Alternative fieldnames: ")
         print(self.TTAltForth)
         print(self.TTAltBack)
@@ -134,7 +135,7 @@ class dataf():
 
         filedata = f1.read()
         f1.close()
-        filedata = filedata.replace("D:\Temp\Nordland",self.path)
+        filedata = filedata.replace(r"D:\Temp\Nordland",self.path)
         #filedata = filedata.replace("e:\data\nordland","H:\nordland")
         filedata = filedata.replace("PointsXX.shp",self.pointfile)
         filedata = filedata.replace("LABELYY",self.exitnamefield)
@@ -156,8 +157,8 @@ class dataf():
         line = filedata.readline()
         while line:
             if ( script =="MOT_C2a.flg" ):
-                line = line.replace("H:\ADVGIS\Group18",self.path)
-                line = line.replace('C:\Users\simon\Documents\GitHub\AdvGIS\MY_ROADS.006','C:\Users\schei008\.matplotlib\Documents\github\AdvGIS\MY_ROADS.006')
+                line = line.replace(r"H:\ADVGIS\Group18",self.path)
+                line = line.replace(r'C:\Users\simon\Documents\GitHub\AdvGIS\MY_ROADS.006',r'C:\Users\schei008\.matplotlib\Documents\github\AdvGIS\MY_ROADS.006')
                 line = line.replace('POINT18','POINT'+str(self.grp))
                 line = line.replace('ROADS18','ROADS'+str(self.grp))
                 line = line.replace('ACCESS',self.access)
@@ -261,7 +262,7 @@ import csv
 def xls_to_csv(workbook= 'data.xls'):
     x =  xlrd.open_workbook(workbook)
     x1 = x.sheet_by_index(0)
-    csvfile = open(os.path.splitext(workbook)[0]+'.csv', 'wb')
+    csvfile = open(os.path.splitext(workbook)[0]+'.csv', 'w')
     writecsv = csv.writer(csvfile, quoting=csv.QUOTE_MINIMAL)
 
     for rownum in range(x1.nrows):
@@ -269,56 +270,56 @@ def xls_to_csv(workbook= 'data.xls'):
     csvfile.close()
 
 def main():
-##    xls_to_csv(workbook="C:\AdvGIS\Group19\MOT19.xls")
-##    d = dataf(spath='C:\AdvGIS\Group19', file='MOT19.csv', exit1 = "BEILEN01", exit2= "WOLVEGA02")
-##    xls_to_csv(workbook="C:\AdvGIS\Group20\MOT20.xls")
-##    d = dataf(spath='C:\AdvGIS\Group20', file='MOT20.csv', exit1 = "BEILEN01", exit2= "STEENWIJK01")
-##    xls_to_csv(workbook="C:\AdvGIS\Group05\MOT05.xls")
-##    d = dataf(spath='C:\AdvGIS\Group05', file='MOT05.csv', exit1 = "exit_S", exit2= "exit_A")
-##    xls_to_csv(workbook="C:\AdvGIS\Group06\MOT06.xls")
-##    d = dataf(spath='C:\AdvGIS\Group06', file='MOT06.csv', exit1 = "JOURE01", exit2= "AKKRUM01")
-##    xls_to_csv(workbook="C:\AdvGIS\Group12\MOT12.xls")
-##    d = dataf(spath='C:\AdvGIS\Group12', file='MOT12.csv', exit1 = "ZWOLLE01", exit2= "VEENINGEN")
-##    xls_to_csv(workbook="C:\AdvGIS\Group02\MOT02.xls")
-##    d = dataf(spath='C:\AdvGIS\Group02', file='MOT02.csv', exit1 = "DOKKUM01", exit2= "DONGJUM01")
-##    xls_to_csv(workbook="C:\AdvGIS\Group08\MOT08.xls")
-##    d = dataf(spath='C:\AdvGIS\Group08', file='MOT08.csv', exit1 = "Exit_2", exit2= "Exit_2")
-##    xls_to_csv(workbook="C:\AdvGIS\Group01\MOT01.xls")
-##    d = dataf(spath='C:\AdvGIS\Group01', file='MOT01.csv', exit1 = "BOLSWARD02", exit2= "DONGJUM01")
-##    xls_to_csv(workbook="C:\AdvGIS\Group03\MoT03.xls")
-##    d = dataf(spath='C:\AdvGIS\Group03', file='MOT03.csv', exit1 = "DOKKUM", exit2= "DRONRYP")
-##    xls_to_csv(workbook="C:\AdvGIS\Group07\MOT07.xls")
-##    d = dataf(spath='C:\AdvGIS\Group07', file='MOT07.csv', exit1 = "OLDEOUWER01", exit2= "OLDEHOLTWOLDE02")
-##    xls_to_csv(workbook="C:\AdvGIS\Group09\MOT09.xls")
-##    d = dataf(spath='C:\AdvGIS\Group09', file='MOT09.csv', exit1 = "EMMELOORD02", exit2= "TUK")
-##    xls_to_csv(workbook="C:\AdvGIS\Group10\MOT10.xlsx")
-##    d = dataf(spath='C:\AdvGIS\Group10', file='MOT10.csv', exit1 = "REDUZUM01", exit2= "NYEGA02")
-##    xls_to_csv(workbook="C:\AdvGIS\Group11\MOT11.xls")
-##    d = dataf(spath='C:\AdvGIS\Group11', file='MOT11.csv', exit1 = "REDUZUM01", exit2= "BEESTERZWAAG01")
-##    xls_to_csv(workbook="C:\AdvGIS\Group13\MOT13.xls")
-##    d = dataf(spath='C:\AdvGIS\Group13', file='MOT13.csv', exit1 = "DOKKUM02", exit2= "GRONINGEN01")
-##    xls_to_csv(workbook="C:\AdvGIS\Group14\MOT14.xls")
-##    d = dataf(spath='C:\AdvGIS\Group14', file='MOT14.csv', exit1 = "DOKKUM02", exit2= "NIEBERT01")
-##    xls_to_csv(workbook="C:\AdvGIS\Group15\MoT15.xls")
-##    d = dataf(spath='C:\AdvGIS\Group15', file='MOT15.csv', exit1 = "DOKKUM02", exit2= "MARUM02")
-##    xls_to_csv(workbook="C:\AdvGIS\Group17\MOT17.xls")
-##    d = dataf(spath='C:\AdvGIS\Group17', file='MOT17.csv', exit1 = "WOLVEGA02", exit2= "ASSEN01")
-##    xls_to_csv(workbook="C:\AdvGIS\Group18\MOT18.xls")
-##    d = dataf(spath='C:\AdvGIS\Group18', file='MOT18.csv', exit1 = "WOLVEGA02", exit2= "HYKEN01")
-##    xls_to_csv(workbook="C:\AdvGIS\Group16\MOT16.xls")
-##    d = dataf(spath='C:\AdvGIS\Group16', file='MOT16.csv', exit1 = "DOKKUM02", exit2= "OPEINDE02")
-##    xls_to_csv(workbook="C:\AdvGIS\Group04\MOT04.xls")
-##    d = dataf(spath='C:\AdvGIS\Group04', file='MOT04.csv', exit1 = "LOENGA", exit2= "DRONRY")
-    # xls_to_csv(workbook="C:\AdvGIS\Group24\MOT_24.xlsx")
-    # d = dataf(spath='C:\AdvGIS\Group24', file='MOT_24.csv', exit1 = "Exit_1", exit2= "Exit_2")
-##    xls_to_csv(workbook="C:\AdvGIS\Group25\MOT25.xls")
-##    d = dataf(spath='C:\AdvGIS\Group25', file='MOT25.csv', exit1 = "NIEBERT02", exit2= "RHEE01")
-##    xls_to_csv(workbook="C:\AdvGIS\Group22\MOT22.xlsx")
-##    d = dataf(spath='C:\AdvGIS\Group22', file='MOT22.csv', exit1 = "HAVELTERBERG", exit2= "SPIER")
-##    xls_to_csv(workbook="C:\AdvGIS\Group21\MOT21.xlsx")
-##    d = dataf(spath='C:\AdvGIS\Group21', file='MOT21.csv', exit1 = "STEENWIJK01", exit2= "SPIER01")
-##    xls_to_csv(workbook="C:\AdvGIS\Group23\MOT23.xls")
-##    d = dataf(spath='C:\AdvGIS\Group23', file='MOT23.csv', exit1 = "END_EXIT", exit2= "BEG_EXIT")
+    ##    xls_to_csv(workbook="C:\AdvGIS\Group19\MOT19.xls")
+    ##    d = dataf(spath='C:\AdvGIS\Group19', file='MOT19.csv', exit1 = "BEILEN01", exit2= "WOLVEGA02")
+    ##    xls_to_csv(workbook="C:\AdvGIS\Group20\MOT20.xls")
+    ##    d = dataf(spath='C:\AdvGIS\Group20', file='MOT20.csv', exit1 = "BEILEN01", exit2= "STEENWIJK01")
+    ##    xls_to_csv(workbook="C:\AdvGIS\Group05\MOT05.xls")
+    ##    d = dataf(spath='C:\AdvGIS\Group05', file='MOT05.csv', exit1 = "exit_S", exit2= "exit_A")
+    ##    xls_to_csv(workbook="C:\AdvGIS\Group06\MOT06.xls")
+    ##    d = dataf(spath='C:\AdvGIS\Group06', file='MOT06.csv', exit1 = "JOURE01", exit2= "AKKRUM01")
+    ##    xls_to_csv(workbook="C:\AdvGIS\Group12\MOT12.xls")
+    ##    d = dataf(spath='C:\AdvGIS\Group12', file='MOT12.csv', exit1 = "ZWOLLE01", exit2= "VEENINGEN")
+    ##    xls_to_csv(workbook="C:\AdvGIS\Group02\MOT02.xls")
+    ##    d = dataf(spath='C:\AdvGIS\Group02', file='MOT02.csv', exit1 = "DOKKUM01", exit2= "DONGJUM01")
+    ##    xls_to_csv(workbook="C:\AdvGIS\Group08\MOT08.xls")
+    ##    d = dataf(spath='C:\AdvGIS\Group08', file='MOT08.csv', exit1 = "Exit_2", exit2= "Exit_2")
+    ##    xls_to_csv(workbook="C:\AdvGIS\Group01\MOT01.xls")
+    ##    d = dataf(spath='C:\AdvGIS\Group01', file='MOT01.csv', exit1 = "BOLSWARD02", exit2= "DONGJUM01")
+    xls_to_csv(workbook="C:\AdvGIS\Group03\MOT03.xls")
+    d = dataf(spath='C:\AdvGIS\Group03', file='MOT03.csv', exit1 = "DOKKUM01", exit2= "DRONRYP02")
+    ##    xls_to_csv(workbook="C:\AdvGIS\Group07\MOT07.xls")
+    ##    d = dataf(spath='C:\AdvGIS\Group07', file='MOT07.csv', exit1 = "OLDEOUWER01", exit2= "OLDEHOLTWOLDE02")
+    ##    xls_to_csv(workbook="C:\AdvGIS\Group09\MOT09.xls")
+    ##    d = dataf(spath='C:\AdvGIS\Group09', file='MOT09.csv', exit1 = "EMMELOORD02", exit2= "TUK")
+    ##    xls_to_csv(workbook="C:\AdvGIS\Group10\MOT10.xlsx")
+    ##    d = dataf(spath='C:\AdvGIS\Group10', file='MOT10.csv', exit1 = "REDUZUM01", exit2= "NYEGA02")
+    ##    xls_to_csv(workbook="C:\AdvGIS\Group11\MOT11.xls")
+    ##    d = dataf(spath='C:\AdvGIS\Group11', file='MOT11.csv', exit1 = "REDUZUM01", exit2= "BEESTERZWAAG01")
+    ##    xls_to_csv(workbook="C:\AdvGIS\Group13\MOT13.xls")
+    ##    d = dataf(spath='C:\AdvGIS\Group13', file='MOT13.csv', exit1 = "DOKKUM02", exit2= "GRONINGEN01")
+    ##    xls_to_csv(workbook="C:\AdvGIS\Group14\MOT14.xls")
+    ##    d = dataf(spath='C:\AdvGIS\Group14', file='MOT14.csv', exit1 = "DOKKUM02", exit2= "NIEBERT01")
+    ##    xls_to_csv(workbook="C:\AdvGIS\Group15\MoT15.xls")
+    ##    d = dataf(spath='C:\AdvGIS\Group15', file='MOT15.csv', exit1 = "DOKKUM02", exit2= "MARUM02")
+    ##    xls_to_csv(workbook="C:\AdvGIS\Group17\MOT17.xls")
+    ##    d = dataf(spath='C:\AdvGIS\Group17', file='MOT17.csv', exit1 = "WOLVEGA02", exit2= "ASSEN01")
+    ##    xls_to_csv(workbook="C:\AdvGIS\Group18\MOT18.xls")
+    ##    d = dataf(spath='C:\AdvGIS\Group18', file='MOT18.csv', exit1 = "WOLVEGA02", exit2= "HYKEN01")
+    ##    xls_to_csv(workbook="C:\AdvGIS\Group16\MOT16.xls")
+    ##    d = dataf(spath='C:\AdvGIS\Group16', file='MOT16.csv', exit1 = "DOKKUM02", exit2= "OPEINDE02")
+    ##    xls_to_csv(workbook="C:\AdvGIS\Group04\MOT04.xls")
+    ##    d = dataf(spath='C:\AdvGIS\Group04', file='MOT04.csv', exit1 = "LOENGA", exit2= "DRONRY")
+        # xls_to_csv(workbook="C:\AdvGIS\Group24\MOT_24.xlsx")
+        # d = dataf(spath='C:\AdvGIS\Group24', file='MOT_24.csv', exit1 = "Exit_1", exit2= "Exit_2")
+    ##    xls_to_csv(workbook="C:\AdvGIS\Group25\MOT25.xls")
+    ##    d = dataf(spath='C:\AdvGIS\Group25', file='MOT25.csv', exit1 = "NIEBERT02", exit2= "RHEE01")
+    ##    xls_to_csv(workbook="C:\AdvGIS\Group22\MOT22.xlsx")
+    ##    d = dataf(spath='C:\AdvGIS\Group22', file='MOT22.csv', exit1 = "HAVELTERBERG", exit2= "SPIER")
+    ##    xls_to_csv(workbook="C:\AdvGIS\Group21\MOT21.xlsx")
+    ##    d = dataf(spath='C:\AdvGIS\Group21', file='MOT21.csv', exit1 = "STEENWIJK01", exit2= "SPIER01")
+    ##    xls_to_csv(workbook="C:\AdvGIS\Group23\MOT23.xls")
+    ##    d = dataf(spath='C:\AdvGIS\Group23', file='MOT23.csv', exit1 = "END_EXIT", exit2= "BEG_EXIT")
 
 
 
