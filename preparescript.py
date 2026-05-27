@@ -10,7 +10,7 @@
 #-------------------------------------------------------------------------------
 
 import os.path
-import xlrd
+from openpyxl import load_workbook
 import csv
 
 
@@ -257,15 +257,21 @@ class dataf():
 
         f2.close()
 
-def xls_to_csv(workbook= 'data.xls'):
-    x = xlrd.open_workbook(workbook)
-    x1 = x.sheet_by_index(0)
-    csvfile = open(os.path.splitext(workbook)[0]+'.csv', 'w')
-    writecsv = csv.writer(csvfile, quoting=csv.QUOTE_MINIMAL)
+def xls_to_csv(workbook='data.xlsx'):
+    # Load workbook
+    wb = load_workbook(workbook, data_only=True)
+    # Select first worksheet
+    ws = wb.worksheets[0]
+    # Create output CSV filename
+    csv_filename = os.path.splitext(workbook)[0] + '.csv'
+    # Write CSV
+    with open(csv_filename, 'w', newline='', encoding='utf-8') as csvfile:
+        writer = csv.writer(csvfile, quoting=csv.QUOTE_MINIMAL)
 
-    for rownum in range(x1.nrows):
-        writecsv.writerow(x1.row_values(rownum))
-    csvfile.close()
+        for row in ws.iter_rows(values_only=True):
+            writer.writerow(row)
+
+    print(f'CSV written to: {csv_filename}')
 
 def main():
     #xls_to_csv(workbook="C:\AdvGIS\Group19\MOT19.xls")
@@ -293,11 +299,11 @@ def main():
     #xls_to_csv(workbook="C:\AdvGIS\Group09\MOT09.xls")
     #d = dataf(spath='C:\AdvGIS\Group09', file='MOT09.csv', exit1 = "EindExit", exit2= "BeginExit")
     #xls_to_csv(workbook="C:\AdvGIS\Group10\MoT10.xls")
-    #d = dataf(spath='C:\AdvGIS\Group10', file='MOT10.csv', exit1 = "VLEDDERVEEN", exit2= "RHEE02")
-    #xls_to_csv(workbook="C:\AdvGIS\Group11\MOT11.xls")
+    d = dataf(spath='C:\AdvGIS\Group10', file='MOT10.csv', exit1 = "VLEDDERVEEN", exit2= "RHEE02")
+    xls_to_csv(workbook="C:\AdvGIS\Group10\MOT10.xlsx")
     #d = dataf(spath='C:\AdvGIS\Group11', file='MOT11.csv', exit1 = "Exit_Stadskanaal", exit2= "Exit_Emmen")
-    xls_to_csv(workbook="C:\AdvGIS\Group13\MOT13.xls")
-    d = dataf(spath='C:\AdvGIS\Group13', file='MOT13.csv', exit1 = "FLUITENBERG02 Start", exit2= "EMMEN02 End")
+    #xls_to_csv(workbook="C:\AdvGIS\Group13\MOT13.xls")
+    #d = dataf(spath='C:\AdvGIS\Group13', file='MOT13.csv', exit1 = "FLUITENBERG02 Start", exit2= "EMMEN02 End")
     #xls_to_csv(workbook="C:\AdvGIS\Group14\MOT14.xls")
     #d = dataf(spath='C:\AdvGIS\Group14', file='MOT14.csv', exit1 = "EMMELOORD0", exit2= "ZWOLLE02")
     #xls_to_csv(workbook="C:\AdvGIS\Group15\MOT15.xls")
