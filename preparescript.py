@@ -160,7 +160,7 @@ class dataf():
         while line:
             if ( script =="MOT_C2a.flg" ):
                 line = line.replace(r"H:\ADVGIS\Group18",self.path)
-                line = line.replace(r'C:\Users\simon\Documents\GitHub\AdvGIS\MY_ROADS.006',r'C:\Users\schei008\Documents\github\AdvGIS\MY_ROADS.006')
+                line = line.replace(r'C:\Users\simon\Documents\GitHub\AdvGIS\MY_ROADS.006',r'C:\Users\schei008\OneDrive - Universiteit Utrecht\Documents\GitHub\AdvGIS')
                 line = line.replace('POINT18','POINT'+str(self.grp))
                 line = line.replace('ROADS18','ROADS'+str(self.grp))
                 line = line.replace('ACCESS',self.access)
