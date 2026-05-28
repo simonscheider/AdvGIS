@@ -125,7 +125,7 @@ class dataf():
     def replaceall(self, script = "MOT_C1.flg"):
         #load the script template (local file)
         if script == 'MOT_C2b.flg':
-            if (self.numalt== 3):
+            if (self.numalt<= 3):
                 scripttemplate = os.path.splitext(script)[0]+'_origin'+os.path.splitext(script)[1]
                 f1=open(scripttemplate,'r')
             elif (self.numalt== 4):
@@ -293,7 +293,7 @@ def main():
     #d = dataf(spath='C:\AdvGIS\Group15', file='MOT15.csv', exit1 = "DOKKUM02", exit2= "MARUM02")
     # xls_to_csv(workbook="C:\AdvGIS\Group20\MOT20.xls")
     # d = dataf(spath='C:\AdvGIS\Group20', file='MOT20.csv', exit1 = "ExitBeilen", exit2= "ExitSteenw")
-    #xls_to_csv(workbook="C:\AdvGIS\Group05\MOT05.xls")
+    # #xls_to_csv(workbook="C:\AdvGIS\Group05\MOT05.xls")
     #d = dataf(spath='C:\AdvGIS\Group05', file='MOT05.csv', exit1 = "Exit_S", exit2= "Exit_N")
     #xls_to_csv(workbook="C:\AdvGIS\Group06\MOT06.xls")
     #d = dataf(spath='C:\AdvGIS\Group06', file='MOT06.csv', exit1 = "VLEDDERVEEN", exit2= "WINDSCHOTEN02")
@@ -303,24 +303,24 @@ def main():
     ##    d = dataf(spath='C:\AdvGIS\Group02', file='MOT02.csv', exit1 = "DOKKUM01", exit2= "DONGJUM01")
     #xls_to_csv(workbook="C:\AdvGIS\Group08\MOT08.xls")
     #d = dataf(spath='C:\AdvGIS\Group08', file='MOT08.csv', exit1 = "SAPPEMEER02", exit2= "VLEDDERVEEN")
-    #xls_to_csv(workbook="C:\AdvGIS\Group01\MOT01.xls")
-    #d = dataf(spath='C:\AdvGIS\Group01', file='MOT01.csv', exit1 = "NIEBERT02", exit2= "RHEE01")
-    #xls_to_csv(workbook="C:\AdvGIS\Group03\MOT03.xls")
+    # xls_to_csv(workbook="C:\AdvGIS\Group01\MOT01.xls")
+    # d = dataf(spath='C:\AdvGIS\Group01', file='MOT01.csv', exit1 = "Niebert02", exit2= "Rhee01")
+    # #xls_to_csv(workbook="C:\AdvGIS\Group03\MOT03.xls")
     #d = dataf(spath='C:\AdvGIS\Group03', file='MOT03.csv', exit1 = "DOKKUM01", exit2= "DRONRYP02")
     #xls_to_csv(workbook="C:\AdvGIS\Group07\MOT07.xls")
     #d = dataf(spath='C:\AdvGIS\Group07', file='MOT07.csv', exit1 = "VLEDDERVEEN", exit2= "ZUIDBROEK02")
     #xls_to_csv(workbook="C:\AdvGIS\Group09\MOT09.xls")
     #d = dataf(spath='C:\AdvGIS\Group09', file='MOT09.csv', exit1 = "EindExit", exit2= "BeginExit")
-    #xls_to_csv(workbook="C:\AdvGIS\Group10\MoT10.xls")
+    # xls_to_csv(workbook="C:\AdvGIS\Group10\MoT10.xlsx")
     # d = dataf(spath='C:\AdvGIS\Group10', file='MOT10.csv', exit1 = "VLEDDERVEEN", exit2= "RHEE02")
-    # xls_to_csv(workbook="C:\AdvGIS\Group10\MOT10.xlsx")
-    #d = dataf(spath='C:\AdvGIS\Group11', file='MOT11.csv', exit1 = "Exit_Stadskanaal", exit2= "Exit_Emmen")
+    # xls_to_csv(workbook="C:\AdvGIS\Group11\MOT11.xls")
+    # d = dataf(spath='C:\AdvGIS\Group11', file='MOT11.csv', exit1 = "EMMEN02", exit2= "VLEDDERVEEN")
     #xls_to_csv(workbook="C:\AdvGIS\Group13\MOT13.xls")
     #d = dataf(spath='C:\AdvGIS\Group13', file='MOT13.csv', exit1 = "FLUITENBERG02 Start", exit2= "EMMEN02 End")
     #xls_to_csv(workbook="C:\AdvGIS\Group14\MOT14.xls")
     #d = dataf(spath='C:\AdvGIS\Group14', file='MOT14.csv', exit1 = "EMMELOORD0", exit2= "ZWOLLE02")
-    #xls_to_csv(workbook="C:\AdvGIS\Group15\MOT15.xls")
-    #d = dataf(spath='C:\AdvGIS\Group15', file='MOT15.csv', exit1 = "STAPHORST01", exit2= "EMMELOORD02")
+    xls_to_csv(workbook="C:\AdvGIS\Group15\MOT15.xlsx")
+    d = dataf(spath='C:\AdvGIS\Group15', file='MOT15.csv', exit1 = "STAPHORST01", exit2= "EMMELOORD02")
     # xls_to_csv(workbook="C:\AdvGIS\Group17\MOT17.xls")
     # d = dataf(spath='C:\AdvGIS\Group17', file='MOT17.csv', exit1 = "WOLVEGA02", exit2= "ASSEN01")
     #xls_to_csv(workbook="C:\AdvGIS\Group18\Group18.xls")
@@ -337,8 +337,8 @@ def main():
     # d = dataf(spath='C:\AdvGIS\Group22', file='MOT22_Thomas.csv', exit1 = "StartNode", exit2= "EndNode")
     # xls_to_csv(workbook="C:\AdvGIS\Group21\MOT21.xls")
     # d = dataf(spath='C:\AdvGIS\Group21', file='MOT21.csv', exit1 = "SNEEK01", exit2= "AKKRUM01")
-    xls_to_csv(workbook="C:\AdvGIS\Group23\MOT23.xls")
-    d = dataf(spath='C:\AdvGIS\Group23', file='MOT23.csv', exit1 = "EXIT_OLDEOUWER01", exit2= "EXIT_OLDEHOLTWOLDE02")
+    # xls_to_csv(workbook="C:\AdvGIS\Group23\MOT23.xls")
+    # d = dataf(spath='C:\AdvGIS\Group23', file='MOT23.csv', exit1 = "EXIT_OLDEOUWER01", exit2= "EXIT_OLDEHOLTWOLDE02")
 
 
 
